@@ -8,4 +8,3 @@
 <div id="container">
     <Navbar />
 </div>
-
