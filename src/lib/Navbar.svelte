@@ -1,6 +1,7 @@
 <script>
     import { page } from '$app/stores';
     $: current = $page.url.pathname;
+    import { base } from '$app/paths';
 </script>
 
 <style>
@@ -45,8 +46,8 @@
 
 <nav style="justify-self: center;">
     <div id="navbar">
-        <a class="nav-item" class:active={current === '/'} href="/"><p>Home</p></a>
-        <a class="nav-item" class:active={current === '/projects'} href="./projects"><p>Projects</p></a>
-        <a class="nav-item" class:active={current === '/commissions'} href="./commissions"><p>Commissions</p></a>
+        <a class="nav-item" class:active={current === '${base}/'} href="{base}/"><p>Home</p></a>
+        <a class="nav-item" class:active={current === '${base}/projects'} href="{base}/projects"><p>Projects</p></a>
+        <a class="nav-item" class:active={current === '${base}/commissions'} href="{base}/commissions"><p>Commissions</p></a>
     </div>
 </nav>
