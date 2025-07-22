@@ -9,7 +9,7 @@ const config = {
 	},
 
 	path: {
-		base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+		base: "/personal-website"
 	}
 };
 
