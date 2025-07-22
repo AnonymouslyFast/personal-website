@@ -46,7 +46,7 @@
 <nav style="justify-self: center;">
     <div id="navbar">
         <a class="nav-item" class:active={current === '/'} href="/"><p>Home</p></a>
-        <a class="nav-item" class:active={current === '/projects'} href="/projects"><p>Projects</p></a>
-        <a class="nav-item" class:active={current === '/commissions'} href="/commissions"><p>Commissions</p></a>
+        <a class="nav-item" class:active={current === '/projects'} href="./projects"><p>Projects</p></a>
+        <a class="nav-item" class:active={current === '/commissions'} href="./commissions"><p>Commissions</p></a>
     </div>
 </nav>
