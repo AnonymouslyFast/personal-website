@@ -1,7 +1,7 @@
 <script>
     import { page } from '$app/state';
     import { base } from '$app/paths';
-    let pathname = $state(page.url.pathname);
+    console.log(page.url.pathname + '===' + base + '/')
 </script>
 
 <style>
@@ -46,8 +46,8 @@
 
 <nav style="justify-self: center;">
     <div id="navbar">
-        <a class="nav-item" class:active={pathname === '${base}/'} href="{base}/"><p>Home</p></a>
-        <a class="nav-item" class:active={pathname === '${base}/projects'} href="{base}/projects"><p>Projects</p></a>
-        <a class="nav-item" class:active={pathname === '${base}/commissions'} href="{base}/commissions"><p>Commissions</p></a>
+        <a class="nav-item" class:active={'.' +page.url.pathname === base + '/'} href='{base}/'><p>Home</p></a>
+        <a class="nav-item" class:active={'.' + page.url.pathname === base + '/projects'} href='{base}/projects'><p>Projects</p></a>
+        <a class="nav-item" class:active={'.' + page.url.pathname === base + '/commissions'} href='{base}/commissions'><p>Commissions</p></a>
     </div>
 </nav>
