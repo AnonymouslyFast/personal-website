@@ -9,7 +9,7 @@ const config = {
 	},
 
 	path: {
-		base: "/personal-website"
+		base: "./personal-website"
 	}
 };
 

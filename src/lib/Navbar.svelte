@@ -1,7 +1,6 @@
 <script>
     import { page } from '$app/state';
     import { base } from '$app/paths';
-    console.log(page.url.pathname + '===' + base + '/')
 </script>
 
 <style>
