@@ -4,15 +4,44 @@
     import FloatingContainer from "$lib/FloatingContainer.svelte";
 </script>
 
+<BackGround />
+
+<div id="container">
+    <Navbar />
+
+    <div id="main">
+        <FloatingContainer>
+            <div id="image-container">
+                <img id="title-image" src="unformal-image.jpeg" alt="Unformal selfie of me (Caleb Shearer) visibly wearing glasses and a green shirt."/>
+            </div>
+            <div id="title-container">
+                <h1 id="title">Hello, I'm Caleb Shearer</h1>
+                <h3 id="description">I'm a high school senior planning to major in Computer Engineering or Computer Science. In the future I'm planning to become a game developer, and I'm working hard to get to that goal.</h3>
+                <div id="connections-container">
+                    <a href="https://github.com/AnonymouslyFast" class="connection-btn"><img src="github-mark.svg" alt="Github icon"></a>
+                    <a href="https://www.youtube.com/@AnonymouslyFast" class="connection-btn"><img src="youtube-icon.svg" alt="Youtube icon"></a>
+                    <a href="mailto:fastskating12@gmail.com" class="connection-btn"><img src="email-icon.svg" alt="Email icon"></a>
+                </div>
+            </div>
+        </FloatingContainer>
+    </div>
+
+</div>
+
 <style>
     #main {
         display: flex;
+        flex-direction: column;
         width: 60vw;
+        height: 60vh;
         justify-self: center;
         margin-top: 5vh;
     }
 
     #image-container {
+        min-width: 0;
+        min-height: 0;
+        flex: 1;
         position: relative;
         top: 7vh;
         left: 3vw;
@@ -32,6 +61,9 @@
     }
 
     #title-container {
+        min-width: 0;
+        min-height: 0;
+        flex: 2;
         width: 50%;
         position: relative;
         top: -27vh;
@@ -40,12 +72,12 @@
     }
 
     #title {
-        font-size: xx-large;
+        font-size: clamp(1rem, 3vw, 1.5rem);
         font-weight: bold
     }
 
     #description {
-        font-size: medium;
+        font-size: clamp(0.5rem, 1.5vw, 1rem);
         font-weight: lighter;
     }
 
@@ -77,28 +109,5 @@
 
 </style>
 
-<BackGround />
-
-<div id="container">
-    <Navbar />
-
-    <div id="main">
-        <FloatingContainer>
-            <div id="image-container">
-                <img id="title-image" src="unformal-image.jpeg" alt="Unformal selfie of me (Caleb Shearer) visibly wearing glasses and a green shirt."/>
-            </div>
-            <div id="title-container">
-                <h1 id="title">Hello, I'm Caleb Shearer</h1>
-                <h3 id="description">I'm a high school senior planning to major in Computer Engineering or Computer Science. In the future I'm planning to become a game developer, and I'm working hard to get to that goal.</h3>
-                <div id="connections-container">
-                    <a href="https://github.com/AnonymouslyFast" class="connection-btn"><img src="github-mark.svg" alt="Github icon"></a>
-                    <a href="https://www.youtube.com/@AnonymouslyFast" class="connection-btn"><img src="youtube-icon.svg" alt="Youtube icon"></a>
-                    <a href="mailto:fastskating12@gmail.com" class="connection-btn"><img src="email-icon.svg" alt="Email icon"></a>
-                </div>
-            </div>
-        </FloatingContainer>
-    </div>
-
-</div>
 
 
