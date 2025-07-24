@@ -49,7 +49,6 @@
 
 
         #container {
-            display: flex !important;
             width: 100vw !important;
             height: auto !important;
             justify-content: center !important;
@@ -57,7 +56,6 @@
         }
 
         #main {
-            display: flex !important;
             width: 85vw !important;
             gap: unset !important;
         }
