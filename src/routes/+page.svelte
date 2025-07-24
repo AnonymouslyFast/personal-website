@@ -101,12 +101,16 @@
         }
 
         #title {
+            margin-left: 0 !important;
+            padding: 0 !important;
             justify-self: center !important;
             width: 85vw !important;
             font-size: 1rem !important;
         }
 
         #description {
+            margin-left: 0 !important;
+            padding: 0 !important;
             justify-self: center !important;
             width: 85vw !important;
             font-size: 0.9rem !important;
