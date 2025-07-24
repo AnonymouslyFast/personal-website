@@ -55,10 +55,9 @@
         }
 
         #main {
-            justify-content: center !important;
             width: 85vw !important;
             gap: unset !important;
-            justify-self: center !important;
+            justify-self: unset !important;
         }
 
         #main-content {
