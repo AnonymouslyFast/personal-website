@@ -53,20 +53,17 @@
 
         #main {
             display: flex !important;
-            width: 90vw !important;
-            justify-self: center !important;
-            justify-content: center !important;
+            width: 90% !important;
             gap: unset !important;
         }
 
         #main-content {
-            width: 90vw !important;
-            justify-self: center !important;
+            width: inherit !important;
             justify-content: center !important;
         }
 
         #image-container {
-            width: 90vw !important;
+            width: 50% !important;
             justify-content: center !important;
             margin-top: 4vw;
         }
@@ -84,7 +81,7 @@
         }
 
         #title-container {
-            width: 90vw !important;
+            width: 50% !important;
             justify-self: center !important;
             justify-content: center !important;
             margin: 0 !important;
@@ -109,13 +106,13 @@
 
         #title-head {
             justify-self: center !important;
-            width: 85vw !important;
+            width: 200% !important;
             font-size: 1rem !important;
         }
 
         #description-para {
             justify-self: center !important;
-            width: 85vw !important;
+            width: 200% !important;
             font-size: 0.9rem !important;
         }
 
