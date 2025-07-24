@@ -57,13 +57,14 @@
 
         #image-container {
             width: inherit !important;
-            justify-content: center;
+            justify-content: center !important;
             margin-top: 4vw;
         }
 
         #title-image {
             width: 40vw !important;
             height: 55vw !important;
+            justify-self: center !important;
             box-shadow:
                     rgba(147, 147, 147, 0.4) 0px 5px,
                     rgba(147, 147, 147, 0.3) 0px 10px,
@@ -97,14 +98,18 @@
         }
 
         #title {
-            width: inherit !important;
+            justify-self: center !important;
+            width: 85vw !important;
             font-size: 1rem !important;
         }
 
         #description {
+            justify-self: center !important;
             width: 85vw !important;
             font-size: 0.9rem !important;
         }
+
+
     }
     
     #container {
