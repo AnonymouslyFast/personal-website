@@ -49,6 +49,8 @@
 
         #main {
             width: 85vw !important;
+            justify-self: center !important;
+            justify-content: center !important;
             gap: unset !important;
         }
 
@@ -67,11 +69,11 @@
             height: 55vw !important;
             justify-self: center !important;
             box-shadow:
-                    rgba(147, 147, 147, 0.4) 0px 5px,
-                    rgba(147, 147, 147, 0.3) 0px 10px,
-                    rgba(147, 147, 147, 0.2) 0px 15px,
-                    rgba(147, 147, 147, 0.1) 0px 20px,
-                    rgba(147, 147, 147, 0.05) 0px 25px !important;
+                    rgba(147, 147, 147, 0.4) 0 5px,
+                    rgba(147, 147, 147, 0.3) 0 10px,
+                    rgba(147, 147, 147, 0.2) 0 15px,
+                    rgba(147, 147, 147, 0.1) 0 20px,
+                    rgba(147, 147, 147, 0.05) 0 25px !important;
         }
 
         #title-container {
@@ -102,16 +104,14 @@
         }
 
         #title {
-            margin-left: 0 !important;
-            padding: 0 !important;
-            width: 85vw !important;
+            justify-self: center !important;
+            width: inherit !important;
             font-size: 1rem !important;
         }
 
         #description {
-            margin-left: 0 !important;
-            padding: 0 !important;
-            width: 85vw !important;
+            justify-self: center !important;
+            width: inherit !important;
             font-size: 0.9rem !important;
         }
 
@@ -132,7 +132,12 @@
         margin-top: 3rem;
         background: #323232;
         border-radius: 5vw;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        box-shadow:
+                rgba(0, 0, 0, 0.25) 0 54px 55px,
+                rgba(0, 0, 0, 0.12) 0 -12px 30px,
+                rgba(0, 0, 0, 0.12) 0 4px 6px,
+                rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09)
+                0 -3px 5px;
     }
 
     #main-content {
@@ -197,14 +202,24 @@
         width: 3vw;
         height: 2vw;
         border-radius: 5vw;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        box-shadow:
+                rgba(0, 0, 0, 0.25) 0 54px 55px,
+                rgba(0, 0, 0, 0.12) 0 -12px 30px,
+                rgba(0, 0, 0, 0.12) 0 4px 6px,
+                rgba(0, 0, 0, 0.17) 0 12px 13px,
+                rgba(0, 0, 0, 0.09) 0 -3px 5px;
         justify-content: center;
         background: #323232;
     }
 
     .connection-btn:hover {
         transition: ease-in 0.2s;
-        box-shadow: rgba(84, 84, 84, 0.25) 0px 54px 55px, rgba(84, 84, 84, 0.12) 0px -12px 30px, rgba(84, 84, 84, 0.12) 0px 4px 6px, rgba(84, 84, 84, 0.17) 0px 12px 13px, rgba(84, 84, 84, 0.09) 0px -3px 5px;
+        box-shadow:
+                rgba(84, 84, 84, 0.25) 0 54px 55px,
+                rgba(84, 84, 84, 0.12) 0 -12px 30px,
+                rgba(84, 84, 84, 0.12) 0 4px 6px,
+                rgba(84, 84, 84, 0.17) 0 12px 13px,
+                rgba(84, 84, 84, 0.09) 0 -3px 5px;
     }
 
     .connection-btn img {
