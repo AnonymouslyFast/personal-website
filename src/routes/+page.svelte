@@ -49,6 +49,7 @@
 
         #main {
             width: 85vw !important;
+            gap: unset !important;
         }
 
         #main-content {
@@ -78,6 +79,8 @@
             justify-self: center !important;
             margin-right: 5vw !important;
             margin-top: 2vw !important;
+            margin-left: 0 !important;
+            padding-left: 0 !important;
         }
 
         #connections-container {
