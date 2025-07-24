@@ -48,25 +48,25 @@
     @media (max-width: 800px) {
 
         #main {
-            width: 85vw !important;
+            width: 20rem !important;
             justify-self: center !important;
             justify-content: center !important;
             gap: unset !important;
         }
 
         #main-content {
-            width: 85vw !important;
+            width: 20rem !important;
         }
 
         #image-container {
-            width: 85vw !important;
+            width: 20rem !important;
             justify-content: center !important;
             margin-top: 4vw;
         }
 
         #title-image {
-            width: 40vw !important;
-            height: 55vw !important;
+            width: 10rem !important;
+            height: auto !important;
             justify-self: center !important;
             box-shadow:
                     rgba(147, 147, 147, 0.4) 0 5px,
@@ -77,25 +77,25 @@
         }
 
         #title-container {
-            width: 85vw !important;
+            width: inherit !important;
             justify-self: center !important;
             justify-content: center !important;
-            margin-right: 5vw !important;
-            margin-top: 2vw !important;
+            margin-right: 0 !important;
+            margin-top: 0 !important;
             margin-left: 0 !important;
             padding-left: 0 !important;
         }
 
         #connections-container {
             margin-left: 0 !important;
-            margin-top: 2vw !important;
+            margin-top: 1rem !important;
             width: 100% !important;
             justify-self: center !important;
         }
 
         .connection-btn{
-            width: 40vw !important;
-            height: 5vw !important;
+            width: 10rem !important;
+            height: 1.5rem !important;
             margin-right: 5% !important;
         }
 
@@ -106,14 +106,14 @@
         #title {
             position: relative !important;
             justify-self: center !important;
-            width: 85vw !important;
+            width: 20rem !important;
             font-size: 1rem !important;
         }
 
         #description {
             position: relative !important;
             justify-self: center !important;
-            width: 85vw !important;
+            width: 20rem !important;
             font-size: 0.9rem !important;
         }
 
