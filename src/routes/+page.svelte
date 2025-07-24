@@ -47,13 +47,19 @@
     
     @media (max-width: 800px) {
 
+        html {
+            width: 100vw;
+        }
+
         #container {
-            width: 100vw !important;
+            justify-self: center !important;
         }
 
         #main {
             display: flex !important;
-            width: 90% !important;
+            justify-content: center !important;
+            align-items: center !important;
+            width: 85vw !important;
             gap: unset !important;
         }
 
@@ -106,13 +112,13 @@
 
         #title-head {
             justify-self: center !important;
-            width: 200% !important;
+            width: 85vw !important;
             font-size: 1rem !important;
         }
 
         #description-para {
             justify-self: center !important;
-            width: 200% !important;
+            width: 85vw !important;
             font-size: 0.9rem !important;
         }
 
@@ -182,7 +188,7 @@
     }
 
     #title-head {
-        font-size: clamp(0.5rem, 1.5rem, 2rem);
+        font-size: clamp(0.5rem, 1.4rem, 1.4rem);
         font-weight: bold
     }
 
