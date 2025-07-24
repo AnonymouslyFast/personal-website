@@ -49,11 +49,11 @@
 
         html {
             width: 100vw !important;
-            justify-content: center !important;
         }
 
         #container {
             width: 100% !important;
+            justify-self: center;
             justify-content: center !important;
             justify-items: center !important;
         }
