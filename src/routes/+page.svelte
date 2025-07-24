@@ -76,7 +76,7 @@
         #title-container {
             width: inherit !important;
             justify-self: center !important;
-            margin-left: 5vw !important;
+            margin-right: 5vw !important;
             margin-top: 2vw !important;
         }
 
@@ -98,12 +98,14 @@
         }
 
         #title {
+            position: relative;
             justify-self: center !important;
             width: 85vw !important;
             font-size: 1rem !important;
         }
 
         #description {
+            position: relative;
             justify-self: center !important;
             width: 85vw !important;
             font-size: 0.9rem !important;
