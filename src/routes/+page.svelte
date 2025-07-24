@@ -48,14 +48,14 @@
     @media (max-width: 800px) {
 
         html {
-            width: 100vw;
-            justify-content: center;
+            width: 100vw !important;
+            justify-content: center !important;
         }
 
         #container {
-            width: 100vw !important;
+            width: 100% !important;
             justify-content: center !important;
-            align-items: center !important;
+            justify-items: center !important;
         }
 
         #main {
