@@ -56,6 +56,8 @@
 
         #main-content {
             width: 85vw !important;
+            justify-self: center !important;
+            justify-content: center !important;
         }
 
         #image-container {
@@ -102,13 +104,13 @@
 
         #title-head {
             justify-self: center;
-            width: 70vw;
+            width: 50vw;
             font-size: 1rem !important;
         }
 
         #description-para {
             justify-self: center;
-            width: 70vw;
+            width: 50vw;
             font-size: 0.9rem !important;
         }
 
