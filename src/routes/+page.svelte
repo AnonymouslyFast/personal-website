@@ -52,7 +52,7 @@
             width: 100vw !important;
             height: auto !important;
             justify-content: center !important;
-            align-items: center !important;
+            justify-self: center !important;
         }
 
         #main {
