@@ -49,15 +49,15 @@
 
         #main {
             width: 85vw !important;
-            gap: unset !important;
+                gap: unset !important;
         }
 
         #main-content {
-            width: inherit !important;
+            width: 85vw !important;
         }
 
         #image-container {
-            width: inherit !important;
+            width: 85vw !important;
             justify-content: center !important;
             margin-top: 4vw;
         }
@@ -75,7 +75,7 @@
         }
 
         #title-container {
-            width: inherit !important;
+            width: 85vw !important;
             justify-self: center !important;
             margin-right: 5vw !important;
             margin-top: 2vw !important;
@@ -101,14 +101,12 @@
         }
 
         #title {
-            position: relative !important;
             justify-self: center !important;
             width: 85vw !important;
             font-size: 1rem !important;
         }
 
         #description {
-            position: relative !important;
             justify-self: center !important;
             width: 85vw !important;
             font-size: 0.9rem !important;
@@ -147,6 +145,7 @@
     }
 
     #image-container {
+        margin-left: 3%;
         display: flex;
         flex: 1;
         position: relative;
@@ -168,8 +167,8 @@
         max-height: 100%;
         flex: 1;
         max-width: 50%;
-        margin-top: 10%;
-        margin-right: 10%;
+        margin-top: 5%;
+        margin-right: 15%;
         text-align: center;
     }
 
