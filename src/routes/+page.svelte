@@ -47,7 +47,12 @@
     
     @media (max-width: 800px) {
 
+        #container {
+            width: 100vw !important;
+        }
+
         #main {
+            display: flex !important;
             width: 90vw !important;
             justify-self: center !important;
             justify-content: center !important;
@@ -103,14 +108,14 @@
         }
 
         #title-head {
-            justify-self: center;
-            width: 50vw;
+            justify-self: center !important;
+            width: 85vw !important;
             font-size: 1rem !important;
         }
 
         #description-para {
-            justify-self: center;
-            width: 85vw;
+            justify-self: center !important;
+            width: 85vw !important;
             font-size: 0.9rem !important;
         }
 
