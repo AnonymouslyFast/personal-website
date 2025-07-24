@@ -62,7 +62,7 @@
             display: flex !important;
             width: 80vw !important;
             gap: unset !important;
-            justify-self: unset !important;
+            justify-self: center !important;
         }
 
         #main-content {
