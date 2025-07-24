@@ -92,12 +92,15 @@
             max-width: 85vw !important;
             justify-self: center !important;
             justify-content: center !important;
-            margin: 0 !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-top: 0 !important;
         }
 
         #connections-container {
             margin-left: 0 !important;
-            margin-top: 3vw !important;
+            margin-top: 6vw !important;
+            padding-bottom: 3vw !important;
             width: 100% !important;
             justify-self: center !important;
         }
