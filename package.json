@@ -21,6 +21,8 @@
 		"vite": "^7.0.4"
 	},
 	"dependencies": {
-		"@sveltejs/adapter-static": "^3.0.8"
+		"@sveltejs/adapter-static": "^3.0.8",
+		"@tailwindcss/vite": "^4.1.11",
+		"tailwindcss": "^4.1.11"
 	}
 }
