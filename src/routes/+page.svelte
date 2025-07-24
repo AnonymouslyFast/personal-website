@@ -56,6 +56,7 @@
         }
 
         #main {
+            justify-self: center !important;
             width: 85vw !important;
             gap: unset !important;
         }
