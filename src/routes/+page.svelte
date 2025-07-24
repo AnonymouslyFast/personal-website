@@ -49,15 +49,18 @@
 
 
         #container {
+            display: flex !important;
             width: 100vw !important;
             height: auto !important;
             justify-content: center !important;
+            align-items: center !important;
         }
 
         #main {
+            display: flex !important;
             width: 85vw !important;
             gap: unset !important;
-            justify-self: unset !important;
+            justify-self: normal !important;
         }
 
         #main-content {
