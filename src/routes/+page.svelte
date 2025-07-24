@@ -49,7 +49,7 @@
 
         #main {
             width: 85vw !important;
-                gap: unset !important;
+            gap: unset !important;
         }
 
         #main-content {
@@ -77,6 +77,7 @@
         #title-container {
             width: 85vw !important;
             justify-self: center !important;
+            justify-content: center !important;
             margin-right: 5vw !important;
             margin-top: 2vw !important;
             margin-left: 0 !important;
@@ -103,7 +104,6 @@
         #title {
             margin-left: 0 !important;
             padding: 0 !important;
-            justify-self: center !important;
             width: 85vw !important;
             font-size: 1rem !important;
         }
@@ -111,7 +111,6 @@
         #description {
             margin-left: 0 !important;
             padding: 0 !important;
-            justify-self: center !important;
             width: 85vw !important;
             font-size: 0.9rem !important;
         }
