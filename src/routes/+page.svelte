@@ -19,10 +19,10 @@
                 </div>
 
                 <div id="title-container">
-                    <h1 id="title">
+                    <h1 id="title-head">
                         Hello, I'm Caleb Shearer
                     </h1>
-                    <p id="description">
+                    <p id="description-para">
                         I'm a high school senior planning to major in Computer Engineering or Computer Science.
                         In the future I'm planning to become a game developer, and I'm working hard to get to that goal.
                     </p>
@@ -103,14 +103,14 @@
             width: 4vw !important;
         }
 
-        #title {
+        #title-head {
             position: relative !important;
             justify-self: center !important;
             width: 20rem !important;
             font-size: 1rem !important;
         }
 
-        #description {
+        #description-para {
             position: relative !important;
             justify-self: center !important;
             width: 20rem !important;
@@ -182,12 +182,12 @@
         text-align: center;
     }
 
-    #title {
+    #title-head {
         font-size: clamp(0.5rem, 1.5rem, 2rem);
         font-weight: bold
     }
 
-    #description {
+    #description-para {
         font-size: clamp(0.5rem, 1rem, 1rem);
         font-weight: lighter;
     }
