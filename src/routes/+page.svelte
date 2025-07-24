@@ -102,7 +102,7 @@
 
         .connection-btn{
             width: 20vw !important;
-            height: 8vw !important;
+            height: 5vw !important;
             margin-right: 5% !important;
         }
 

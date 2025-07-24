@@ -11,7 +11,8 @@
         }
 
         .nav-item {
-            width: 30vw !important;
+            width: 27vw !important;
+            justify-self: center !important;
         }
 
         .nav-item p {
