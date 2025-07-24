@@ -48,20 +48,20 @@
     @media (max-width: 800px) {
 
         #main {
-            width: 85vw !important;
+            width: 90vw !important;
             justify-self: center !important;
             justify-content: center !important;
             gap: unset !important;
         }
 
         #main-content {
-            width: 85vw !important;
+            width: 90vw !important;
             justify-self: center !important;
             justify-content: center !important;
         }
 
         #image-container {
-            width: 85vw !important;
+            width: 90vw !important;
             justify-content: center !important;
             margin-top: 4vw;
         }
@@ -79,7 +79,7 @@
         }
 
         #title-container {
-            width: 85vw !important;
+            width: 90vw !important;
             justify-self: center !important;
             justify-content: center !important;
             margin: 0 !important;
@@ -94,7 +94,7 @@
 
         .connection-btn{
             width: 20vw !important;
-            height: 3vw !important;
+            height: 8vw !important;
             margin-right: 5% !important;
         }
 
@@ -110,7 +110,7 @@
 
         #description-para {
             justify-self: center;
-            width: 50vw;
+            width: 85vw;
             font-size: 0.9rem !important;
         }
 
