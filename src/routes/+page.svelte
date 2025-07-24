@@ -59,7 +59,7 @@
             display: flex !important;
             justify-content: center !important;
             align-items: center !important;
-            width: 85vw !important;
+            width: 80vw !important;
             gap: unset !important;
         }
 
@@ -69,7 +69,6 @@
         }
 
         #image-container {
-            width: 50% !important;
             justify-content: center !important;
             margin-top: 4vw;
         }
@@ -87,7 +86,7 @@
         }
 
         #title-container {
-            width: 85vw !important;
+            max-width: 85vw !important;
             justify-self: center !important;
             justify-content: center !important;
             margin: 0 !important;
