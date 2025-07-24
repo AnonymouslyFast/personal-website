@@ -49,15 +49,13 @@
 
 
         #container {
-            justify-self: center !important;
             justify-content: center !important;
-            justify-items: center !important;
             width: 100% !important;
             height: 100% !important;
         }
 
         #main {
-            width: 90vw !important;
+            width: 85vw !important;
             gap: unset !important;
             justify-self: center !important;
         }
@@ -116,7 +114,7 @@
 
         #description-para {
             justify-self: center !important;
-            width: inherit !important;
+            width: 90% !important;
             font-size: 0.9rem !important;
         }
 
