@@ -105,13 +105,13 @@
 
         #title {
             justify-self: center !important;
-            width: inherit !important;
+            width: 85vw !important;
             font-size: 1rem !important;
         }
 
         #description {
             justify-self: center !important;
-            width: inherit !important;
+            width: 85vw !important;
             font-size: 0.9rem !important;
         }
 
