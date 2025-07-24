@@ -50,8 +50,8 @@
 
         #container {
             justify-content: center !important;
-            width: 100% !important;
-            height: 100% !important;
+            width: 100vw !important;
+            height: 100vh !important;
         }
 
         #main {
