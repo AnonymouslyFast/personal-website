@@ -58,6 +58,8 @@
         #main {
             justify-self: center !important;
             width: 85vw !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
             height: inherit !important;
             gap: unset !important;
         }
