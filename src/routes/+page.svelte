@@ -101,14 +101,14 @@
         }
 
         #title {
-            position: relative;
+            position: relative !important;
             justify-self: center !important;
             width: 85vw !important;
             font-size: 1rem !important;
         }
 
         #description {
-            position: relative;
+            position: relative !important;
             justify-self: center !important;
             width: 85vw !important;
             font-size: 0.9rem !important;
