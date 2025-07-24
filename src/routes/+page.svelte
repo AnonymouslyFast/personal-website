@@ -53,7 +53,9 @@
         }
 
         #container {
-            width: 100% !important;
+            width: 100vw !important;
+            justify-content: center !important;
+            align-items: center !important;
         }
 
         #main {
