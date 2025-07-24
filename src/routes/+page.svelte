@@ -52,10 +52,12 @@
             justify-self: center !important;
             justify-content: center !important;
             justify-items: center !important;
+            width: 100% !important;
+            height: 100% !important;
         }
 
         #main {
-            width: 80vw !important;
+            width: 90vw !important;
             gap: unset !important;
             justify-self: center !important;
         }
