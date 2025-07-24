@@ -102,7 +102,6 @@
         }
 
         #description {
-            width: inherit !important;
             justify-self: center !important;
             font-size: 0.9rem !important;
         }
