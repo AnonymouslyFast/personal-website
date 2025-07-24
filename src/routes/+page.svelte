@@ -48,24 +48,24 @@
     @media (max-width: 800px) {
 
         #main {
-            width: 20rem !important;
+            width: 85vw !important;
             justify-self: center !important;
             justify-content: center !important;
             gap: unset !important;
         }
 
         #main-content {
-            width: 20rem !important;
+            width: 85vw !important;
         }
 
         #image-container {
-            width: 20rem !important;
+            width: 85vw !important;
             justify-content: center !important;
             margin-top: 4vw;
         }
 
         #title-image {
-            width: 10rem !important;
+            width: 40vw !important;
             height: auto !important;
             justify-self: center !important;
             box-shadow:
@@ -88,14 +88,14 @@
 
         #connections-container {
             margin-left: 0 !important;
-            margin-top: 1rem !important;
+            margin-top: 3vw !important;
             width: 100% !important;
             justify-self: center !important;
         }
 
         .connection-btn{
-            width: 10rem !important;
-            height: 1.5rem !important;
+            width: 20vw !important;
+            height: 3vw !important;
             margin-right: 5% !important;
         }
 
@@ -104,16 +104,18 @@
         }
 
         #title-head {
-            position: relative !important;
-            justify-self: center !important;
-            width: 20rem !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            justify-self: center;
+            width: 85vw;
             font-size: 1rem !important;
         }
 
         #description-para {
-            position: relative !important;
-            justify-self: center !important;
-            width: 20rem !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            justify-self: center;
+            width: 85vw;
             font-size: 0.9rem !important;
         }
 
