@@ -60,10 +60,9 @@
 
         #main {
             display: flex !important;
-            justify-content: center !important;
-            align-items: center !important;
             width: 80vw !important;
             gap: unset !important;
+            justify-self: unset !important;
         }
 
         #main-content {
