@@ -87,7 +87,7 @@
         }
 
         #title-container {
-            width: 50% !important;
+            width: 85vw !important;
             justify-self: center !important;
             justify-content: center !important;
             margin: 0 !important;
