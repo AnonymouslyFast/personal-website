@@ -47,19 +47,14 @@
     
     @media (max-width: 800px) {
 
-        html {
-            width: 100vw !important;
-        }
 
         #container {
-            width: 100% !important;
             justify-self: center;
             justify-content: center !important;
             justify-items: center !important;
         }
 
         #main {
-            display: flex !important;
             width: 80vw !important;
             gap: unset !important;
             justify-self: center !important;
