@@ -6,12 +6,12 @@
 <style>
     @media (max-width: 800px) {
         #navbar {
-            width: 90vw !important;
+            width: 100vw !important;
             height: auto !important;
         }
 
         .nav-item {
-            width: 25vw !important;
+            width: 30vw !important;
         }
 
         .nav-item p {

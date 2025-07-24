@@ -55,6 +55,7 @@
         }
 
         #main {
+            margin: 0 !important;
             width: 85vw !important;
             gap: unset !important;
             justify-self: unset !important;
