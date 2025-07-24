@@ -112,13 +112,13 @@
 
         #title-head {
             justify-self: center !important;
-            width: 85vw !important;
+            width: inherit !important;
             font-size: 1rem !important;
         }
 
         #description-para {
             justify-self: center !important;
-            width: 85vw !important;
+            width: inherit !important;
             font-size: 0.9rem !important;
         }
 
