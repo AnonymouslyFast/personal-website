@@ -52,6 +52,7 @@
         }
 
         #container {
+            width: 100% !important;
             justify-self: center !important;
         }
 
