@@ -70,14 +70,16 @@
         }
 
         #image-container {
-            justify-content: center !important;
             margin-top: 4vw;
+            justify-self: unset !important;
         }
 
         #title-image {
             width: 40vw !important;
             height: auto !important;
-            justify-self: center !important;
+            justify-self: unset !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
             box-shadow:
                     rgba(147, 147, 147, 0.4) 0 5px,
                     rgba(147, 147, 147, 0.3) 0 10px,
