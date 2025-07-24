@@ -60,7 +60,6 @@
             display: flex !important;
             width: 85vw !important;
             gap: unset !important;
-            justify-self: normal !important;
         }
 
         #main-content {
