@@ -48,11 +48,16 @@
     @media (max-width: 800px) {
 
 
+        #container {
+            justify-self: center !important;
+            justify-content: center !important;
+            justify-items: center !important;
+        }
 
         #main {
             width: 80vw !important;
             gap: unset !important;
-            padding: unset !important;
+            justify-self: center !important;
         }
 
         #main-content {
