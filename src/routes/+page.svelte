@@ -52,10 +52,11 @@
         }
 
         #main-content {
-            width: 85vw !important;
+            width: inherit !important;
         }
 
         #image-container {
+            width: inherit !important;
             justify-content: center;
             margin-top: 4vw;
         }
@@ -72,7 +73,7 @@
         }
 
         #title-container {
-            width: 100% !important;
+            width: inherit !important;
             justify-self: center !important;
             margin-left: 5vw !important;
             margin-top: 2vw !important;
@@ -101,6 +102,7 @@
         }
 
         #description {
+            width: inherit !important;
             justify-self: center !important;
             font-size: 0.9rem !important;
         }
