@@ -49,12 +49,13 @@
 
 
         #container {
-            justify-content: center !important;
             width: 100vw !important;
-            height: 100vh !important;
+            height: auto !important;
+            justify-content: center !important;
         }
 
         #main {
+            justify-content: center !important;
             width: 85vw !important;
             gap: unset !important;
             justify-self: center !important;
