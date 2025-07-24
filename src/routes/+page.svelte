@@ -12,8 +12,8 @@
             <div id="main-content">
                 <div id="image-container">
                     <img
-                            src="unformal-image.jpeg"
-                            alt="Unformal selfie of me (Caleb Shearer) visibly wearing glasses and a green shirt."
+                            src="unformal-selfie.jpeg"
+                            alt="Unformal selfie of me (Caleb Shearer) visibly wearing glasses and a black shirt at my desk."
                             id="title-image"
                     />
                 </div>
@@ -51,8 +51,11 @@
             width: 85vw !important;
         }
 
-        #image-container {
+        #main-content {
             width: 85vw !important;
+        }
+
+        #image-container {
             justify-content: center;
             margin-top: 4vw;
         }
@@ -78,14 +81,14 @@
         #connections-container {
             margin-left: 0 !important;
             margin-top: 2vw !important;
-            width: 60vw !important;
+            width: 100% !important;
             justify-self: center !important;
         }
 
         .connection-btn{
             width: 40vw !important;
             height: 5vw !important;
-            margin-right: 20% !important;
+            margin-right: 5% !important;
         }
 
         .connection-btn img {
@@ -95,11 +98,9 @@
         #title {
             justify-self: center !important;
             font-size: 1rem !important;
-            width: 70vw !important;
         }
 
         #description {
-            width: 60vw !important;
             justify-self: center !important;
             font-size: 0.9rem !important;
         }

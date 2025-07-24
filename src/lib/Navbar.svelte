@@ -4,6 +4,24 @@
 </script>
 
 <style>
+    @media (max-width: 800px) {
+        #navbar {
+            width: 90vw !important;
+            height: auto !important;
+        }
+
+        .nav-item {
+            width: 25vw !important;
+        }
+
+        .nav-item p {
+            width: 100% !important;
+            font-size: 0.8rem !important;
+            height: 100% !important;
+            align-self: center;
+        }
+    }
+
      #navbar {
          margin-top: 2vh;
          width: 50vw;
