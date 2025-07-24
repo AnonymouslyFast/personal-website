@@ -58,6 +58,7 @@
         #main {
             justify-self: center !important;
             width: 85vw !important;
+            height: inherit !important;
             gap: unset !important;
         }
 
