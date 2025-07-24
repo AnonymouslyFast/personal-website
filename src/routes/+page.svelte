@@ -77,13 +77,10 @@
         }
 
         #title-container {
-            width: inherit !important;
+            width: 85vw !important;
             justify-self: center !important;
             justify-content: center !important;
-            margin-right: 0 !important;
-            margin-top: 0 !important;
-            margin-left: 0 !important;
-            padding-left: 0 !important;
+            margin: 0 !important;
         }
 
         #connections-container {
@@ -104,18 +101,14 @@
         }
 
         #title-head {
-            margin: 0 !important;
-            padding: 0 !important;
             justify-self: center;
-            width: 85vw;
+            width: 70vw;
             font-size: 1rem !important;
         }
 
         #description-para {
-            padding: 0 !important;
-            margin: 0 !important;
             justify-self: center;
-            width: 85vw;
+            width: 70vw;
             font-size: 0.9rem !important;
         }
 
