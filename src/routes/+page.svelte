@@ -1,6 +1,5 @@
 <script>
     import Navbar from "$lib/Navbar.svelte";
-    import '$lib/app.css'
 </script>
 
 <div id="container">
@@ -42,6 +41,18 @@
 </div>
 
 <style>
+    :global(body) {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        font-family: "Comfortaa", sans-serif;
+        color: #cccccc;
+        background: radial-gradient(circle 100vw at center, #323232 0%, #211b1b 100%);
+    }
+
+    @view-transition {
+        navigation: auto;
+    }
     
     @media (max-width: 800px) {
 

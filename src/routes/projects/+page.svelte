@@ -2,7 +2,6 @@
     import Navbar from "$lib/Navbar.svelte";
     import ProjectList from "$lib/ProjectList.svelte";
     import ProjectContent from "$lib/ProjectContent.svelte";
-    import '$lib/app.css'
 </script>
 
 
@@ -23,6 +22,19 @@
 </div>
 
 <style>
+    :global(body) {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        font-family: "Comfortaa", sans-serif;
+        color: #cccccc;
+        background: radial-gradient(circle 100vw at center, #323232 0%, #211b1b 100%);
+    }
+
+    @view-transition {
+        navigation: auto;
+    }
+
     #container {
         width: 100%;
         height: 100%;
