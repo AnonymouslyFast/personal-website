@@ -187,7 +187,7 @@
         max-height: 100%;
         flex: 1;
         max-width: 50%;
-        margin-top: 5%;
+        margin-top: clamp(5%, 8%, 8%);
         margin-right: 15%;
         text-align: center;
     }
