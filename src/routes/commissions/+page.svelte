@@ -1,9 +1,8 @@
 <script>
-    import BackGround from "$lib/BackGround.svelte";
     import Navbar from "$lib/Navbar.svelte";
+    import '$lib/app.css'
 </script>
 
-<BackGround />
 
 <div id="container">
     <Navbar />
