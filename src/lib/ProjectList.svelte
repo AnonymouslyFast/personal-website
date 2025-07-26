@@ -41,6 +41,7 @@
         font-family: inherit;
         font-size: inherit;
         font-weight: initial;
+        justify-content: center;
         width: 40%;
         padding: 2%;
         display: flex;
