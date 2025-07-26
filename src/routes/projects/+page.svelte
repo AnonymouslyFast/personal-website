@@ -39,14 +39,11 @@
         #list-container {
             width: 80% !important;
             height: 20% !important;
-            align-items: center;
         }
 
         #project-container {
             width: 80% !important;
             margin: 0 !important;
-            align-items: center !important;
-            justify-items: unset !important;
         }
     }
 
@@ -92,7 +89,6 @@
         border-radius: 5vw;
         width: 60%;
         height: auto;
-        justify-items: center;
         box-shadow:
                 rgba(0, 0, 0, 0.25) 0 54px 55px,
                 rgba(0, 0, 0, 0.12) 0 -12px 30px,
