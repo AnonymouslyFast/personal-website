@@ -39,10 +39,12 @@
         #list-container {
             width: 80% !important;
             height: 20% !important;
+            margin: 0 !important;
         }
 
         #project-container {
             width: 80% !important;
+            margin: 0 auto !important;
         }
     }
 
