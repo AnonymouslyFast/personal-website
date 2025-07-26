@@ -12,7 +12,7 @@
         <div id="main-content">
             <div id="list-container">
                 <ProjectList />
-            </div> 
+            </div>
 
             <div id="project-container">
                 <ProjectContent />
@@ -40,14 +40,13 @@
             width: 80% !important;
             height: 20% !important;
             margin: 0 !important;
-            display: flex !important;
-            justify-content: center !important;
+            justify-items: center;
         }
 
         #project-container {
             width: 80% !important;
             margin: 0 !important;
-            justify-content: center !important;
+            justify-items: center !important;
         }
     }
 
@@ -93,7 +92,6 @@
         border-radius: 5vw;
         width: 60%;
         height: auto;
-        justify-content: center;
         justify-items: center;
         box-shadow:
                 rgba(0, 0, 0, 0.25) 0 54px 55px,
