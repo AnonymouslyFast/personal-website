@@ -40,11 +40,14 @@
             width: 80% !important;
             height: 20% !important;
             margin: 0 !important;
+            display: flex !important;
+            justify-content: center !important;
         }
 
         #project-container {
             width: 80% !important;
             margin: 0 !important;
+            justify-content: center !important;
         }
     }
 
