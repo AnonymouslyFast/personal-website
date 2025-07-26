@@ -17,7 +17,7 @@
 </p>
 
 <h3>Development playlist</h3>
-<iframe id="yt-frame" width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?si=jJIlnQFYhs8YN0o7&amp;list=PL4660MJmuL4C25iCtkUV67dXG_TPb5suM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe id="yt-frame" src="https://www.youtube-nocookie.com/embed/videoseries?si=jJIlnQFYhs8YN0o7&amp;list=PL4660MJmuL4C25iCtkUV67dXG_TPb5suM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p> </p>
 <i>More Coming Soon™</i>
@@ -44,5 +44,7 @@
 
     #yt-frame {
         border-radius: 2vw;
+        width: 60%;
+        height: 20vw;
     }
 </style>
