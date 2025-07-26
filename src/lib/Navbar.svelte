@@ -64,8 +64,8 @@
 
 <nav style="justify-self: center;">
     <div id="navbar">
-        <a class="nav-item" class:active={'.' +page.url.pathname === base + '/'} href='{base}/'><p>Home</p></a>
-        <a class="nav-item" class:active={'.' + page.url.pathname === base + '/projects'} href='{base}/projects'><p>Projects</p></a>
-        <a class="nav-item" class:active={'.' + page.url.pathname === base + '/commissions'} href='{base}/commissions'><p>Commissions</p></a>
+        <a class="nav-item" class:active={page.url.pathname === base + '/'} href='{base}/'><p>Home</p></a>
+        <a class="nav-item" class:active={page.url.pathname === base + '/projects'} href='{base}/projects'><p>Projects</p></a>
+        <a class="nav-item" class:active={page.url.pathname === base + '/contact'} href='{base}/contact'><p>Contact</p></a>
     </div>
 </nav>

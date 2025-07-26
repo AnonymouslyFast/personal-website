@@ -22,6 +22,11 @@
 </div>
 
 <style>
+
+    @view-transition {
+        navigation: auto !important;
+    }
+
     :global(body) {
         width: 100%;
         height: 100%;
@@ -29,10 +34,6 @@
         font-family: "Comfortaa", sans-serif;
         color: #cccccc;
         background: radial-gradient(circle 100vw at center, #323232 0%, #211b1b 100%);
-    }
-
-    @view-transition {
-        navigation: auto !important;
     }
 
     @media(max-width: 800px) {
