@@ -63,6 +63,14 @@
             width: 80% !important;
         }
 
+        .contact-item {
+            width: 80% !important;
+        }
+
+        #resume {
+            width: 80% !important;
+        }
+
     }
 
     #main-container {
