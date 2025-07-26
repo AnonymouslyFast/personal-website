@@ -64,8 +64,9 @@
         }
 
         .contact-item {
-            width: 80% !important;
+            width: 85% !important;
         }
+
 
         #resume {
             width: 80% !important;
