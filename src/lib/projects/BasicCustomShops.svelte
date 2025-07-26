@@ -45,9 +45,4 @@
         width: 80%;
     }
 
-    #yt-frame {
-        border-radius: 2vw;
-        width: 80%;
-        height: 315px;
-    }
 </style>
