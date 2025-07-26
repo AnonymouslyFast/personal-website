@@ -19,6 +19,13 @@
     {/each}
 </div>
 <style>
+    @media (max-width: 800px) {
+        .list-item {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+
     h2 {
         width: inherit;
         text-align: center;

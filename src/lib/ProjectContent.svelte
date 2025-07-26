@@ -15,3 +15,11 @@
     <svelte:component this={project.component} />
 {/if}
 
+<style>
+    * {
+       justify-content: center !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+</style>
+

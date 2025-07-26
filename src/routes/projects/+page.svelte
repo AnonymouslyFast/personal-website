@@ -12,7 +12,7 @@
         <div id="main-content">
             <div id="list-container">
                 <ProjectList />
-            </div>
+            </div> 
 
             <div id="project-container">
                 <ProjectContent />
