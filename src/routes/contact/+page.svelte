@@ -150,6 +150,7 @@
         border-radius: 5vw;
         display: flex;
         flex-direction: column;
+        align-items: center;
         box-shadow:
                 rgba(0, 0, 0, 0.25) 0 54px 55px,
                 rgba(0, 0, 0, 0.12) 0 -12px 30px,
@@ -164,7 +165,6 @@
         border-radius: 3rem;
         padding: 2%;
         width: 70%;
-        justify-self: center;
         margin-bottom: 2rem;
         box-shadow:
                 rgba(29, 33, 40, 0.4) 0 0 0 2px,
