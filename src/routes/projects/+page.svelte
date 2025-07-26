@@ -32,7 +32,18 @@
     }
 
     @view-transition {
-        navigation: auto;
+        navigation: auto !important;
+    }
+
+    @media(max-width: 800px) {
+        #list-container {
+            width: 80% !important;
+            height: 20% !important;
+        }
+
+        #project-container {
+            width: 80% !important;
+        }
     }
 
     #container {
@@ -55,12 +66,14 @@
         gap: 2rem;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     #list-container {
         background: #323232;
         border-radius: 5vw;
-        width: 40%;
+        width: 30%;
         height: 60%;
         box-shadow:
                 rgba(0, 0, 0, 0.25) 0 54px 55px,
@@ -73,7 +86,7 @@
     #project-container {
         background: #323232;
         border-radius: 5vw;
-        width: 100%;
+        width: 60%;
         height: auto;
         justify-content: center;
         justify-items: center;
