@@ -19,6 +19,12 @@
     {/each}
 </div>
 <style>
+    @media (max-width: 800px) {
+        .list-item {
+            width: 70% !important;
+        }
+    }
+
     #content {
         margin-bottom: 2rem;
         width: 100%;
@@ -34,6 +40,7 @@
         margin-bottom: 0;
     }
 
+
     .list-item {
         background: inherit;
         border: none;
@@ -42,7 +49,7 @@
         font-size: inherit;
         font-weight: initial;
         justify-content: center;
-        width: 40%;
+        width: 50%;
         padding: 2%;
         display: flex;
         border-radius: 2vw;

@@ -4,7 +4,7 @@
 <h4>About this project</h4>
 <hr>
 <p>
-    This is a website created my me, this website is for the purpose of just showing off my skills as a developer.
+    This is a website created by only me, this website is for the purpose of just showing off my skills as a developer.
     I also wanted to learn some website development with Svelte and typescript, as of now I know the basics of both.
     Please enjoy the site, and this code is on my github as a repository, and is hosted by github pages.
 </p>
