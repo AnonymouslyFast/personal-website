@@ -57,6 +57,7 @@
 
     .list-item:hover {
         transition: ease-in 0.25s;
+        cursor: pointer;
         box-shadow:
                 rgba(65, 65, 65, 0.25) 0 54px 55px,
                 rgba(65, 65, 65, 0.12) 0 -12px 30px,
