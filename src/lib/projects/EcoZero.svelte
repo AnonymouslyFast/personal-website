@@ -44,7 +44,7 @@
 
     #yt-frame {
         border-radius: 2vw;
-        width: 60%;
-        height: 50vh;
+        width: 80%;
+        height: 315px;
     }
 </style>
