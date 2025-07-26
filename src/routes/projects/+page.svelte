@@ -38,7 +38,7 @@
     @media(max-width: 800px) {
         #list-container {
             width: 80% !important;
-            height: 20% !important;
+            margin: 0 !important;
         }
 
         #project-container {
@@ -53,7 +53,7 @@
     }
 
     #main-container {
-        width: inherit;
+        width: 100%;
         height: auto;
         margin-top: 5vw;
         display: flex;
