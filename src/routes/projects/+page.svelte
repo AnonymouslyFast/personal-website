@@ -39,14 +39,13 @@
         #list-container {
             width: 80% !important;
             height: 20% !important;
-            margin: 0 !important;
-            justify-items: center;
+            align-items: center;
         }
 
         #project-container {
             width: 80% !important;
             margin: 0 !important;
-            justify-items: center !important;
+            align-items: center !important;
         }
     }
 
