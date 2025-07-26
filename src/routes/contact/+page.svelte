@@ -95,6 +95,8 @@
         width: 40%;
         height: 40%;
         text-align: center;
+        display: flex;
+        flex-direction: column;
         background: #323232;
         border-radius: 5vw;
         box-shadow:
@@ -146,6 +148,8 @@
         text-align: center;
         background: #323232;
         border-radius: 5vw;
+        display: flex;
+        flex-direction: column;
         box-shadow:
                 rgba(0, 0, 0, 0.25) 0 54px 55px,
                 rgba(0, 0, 0, 0.12) 0 -12px 30px,
