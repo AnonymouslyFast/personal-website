@@ -11,15 +11,6 @@
 
 {#if project}
     <h2>{project.name}</h2>
-    <p style="font-weight: lighter; margin-top: -1rem !important; margin-bottom: 2rem;">{project.type}</p>
+    <p style="font-weight: lighter; margin-top: -1rem; margin-bottom: 2rem;">{project.type}</p>
     <svelte:component this={project.component} />
 {/if}
-
-<style>
-    * {
-       justify-content: center !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-</style>
-

@@ -46,6 +46,7 @@
             width: 80% !important;
             margin: 0 !important;
             align-items: center !important;
+            justify-items: unset !important;
         }
     }
 
