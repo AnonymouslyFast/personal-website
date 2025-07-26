@@ -9,7 +9,7 @@
     }
 </script>
 
-<div style="justify-content: center; margin-bottom: 2rem;">
+<div id="content">
     <h2>Project Selector</h2>
 
     {#each projects as project}
@@ -19,6 +19,15 @@
     {/each}
 </div>
 <style>
+    #content {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     h2 {
         width: inherit;
         text-align: center;
@@ -35,9 +44,6 @@
         padding: 2%;
         display: flex;
         border-radius: 2vw;
-        justify-self: center;
-        justify-content: center;
-        align-items: center;
         margin-top: 1.5rem;
         box-shadow:
                 rgba(0, 0, 0, 0.25) 0 54px 55px,
