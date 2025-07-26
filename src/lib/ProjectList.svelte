@@ -20,7 +20,7 @@
 </div>
 <style>
     #content {
-        margin-top: 2rem;
+        margin-bottom: 2rem;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -31,6 +31,7 @@
     h2 {
         width: inherit;
         text-align: center;
+        margin-bottom: 0;
     }
 
     .list-item {
@@ -44,7 +45,7 @@
         padding: 2%;
         display: flex;
         border-radius: 2vw;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         box-shadow:
                 rgba(0, 0, 0, 0.25) 0 54px 55px,
                 rgba(0, 0, 0, 0.12) 0 -12px 30px,
