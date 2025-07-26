@@ -40,15 +40,11 @@
             width: 80% !important;
             height: 20% !important;
             margin: 0 !important;
-            justify-content: center !important;
-            align-items: center !important;
         }
 
         #project-container {
             width: 80% !important;
-            margin: 0 auto !important;
-            justify-content: center !important;
-            align-items: center !important;
+            margin: 0 !important;
         }
     }
 
