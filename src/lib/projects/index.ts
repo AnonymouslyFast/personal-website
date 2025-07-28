@@ -5,6 +5,7 @@ import type {SvelteComponent} from "svelte";
 import PersonalWebsite from "$lib/projects/PersonalWebsite.svelte";
 import EcoZero from "$lib/projects/EcoZero.svelte";
 import BasicCustomShops from "$lib/projects/BasicCustomShops.svelte";
+import Cytra from "$lib/projects/Cytra.svelte";
 
 
 export interface Project {
@@ -16,5 +17,6 @@ export interface Project {
 export const projects: Project[] = [
     { name: "Personal Website",  component: PersonalWebsite, type: "Website"},
     { name: "EcoZero",  component: EcoZero, type: "Video Game"},
-    { name: "BasicCustomShops",  component: BasicCustomShops, type: "Minecraft Plugin"}
+    { name: "BasicCustomShops",  component: BasicCustomShops, type: "Minecraft Plugin"},
+    { name: "Cytra",  component: Cytra, type: "Video Game"},
 ];

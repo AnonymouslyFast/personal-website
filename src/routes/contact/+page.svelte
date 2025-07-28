@@ -54,6 +54,7 @@
         background: radial-gradient(circle 100vw at center, #323232 0%, #211b1b 100%);
     }
 
+
     @media (max-width: 800px) {
         #contact-container {
             width: 80% !important;
@@ -134,8 +135,7 @@
 
     .contact-item img {
         width: 10%;
-        margin-left: 1rem;
-        justify-self: flex-start;
+        justify-self: flex-start !important;
     }
 
     .contact-item a, p {
