@@ -43,7 +43,7 @@
 <style>
 
     @view-transition {
-        navigation: auto !important;
+        navigation: auto;
     }
 
     :global(html) {

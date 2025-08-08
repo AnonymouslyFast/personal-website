@@ -10,7 +10,7 @@
             tools like Photoshop and machines like a heat press, and laser printer.
         </p>
 
-        <p id="divider"> </p>
+        <div id="divider"> </div>
 
         <h4>Course Information</h4>
         <hr>

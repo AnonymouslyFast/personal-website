@@ -41,11 +41,10 @@
 
 <style>
     @view-transition {
-        navigation: auto !important;
-
+        navigation: auto;
     }
 
-    :global(body) {
+    :global(html) {
         width: 100%;
         height: 100%;
         margin: 0;
