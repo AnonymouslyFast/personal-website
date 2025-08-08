@@ -2,6 +2,9 @@
     import Navbar from "$lib/Navbar.svelte";
     import {base} from "$app/paths";
     import {selectedCapsule} from "$lib/stores/selectedCapsule";
+    import About from "$lib/imageediting/About.svelte"
+    import Projects from "$lib/imageediting/Projects.svelte"
+
 
     function select(num: number) {
         selectedCapsule.set(num);
@@ -36,6 +39,13 @@
 
         </div>
     </div>
+
+    {#if $selectedCapsule === 0}
+        <About />
+    {:else if $selectedCapsule === 1}
+        <Projects />
+    {/if}
+
 </div>
 
 <style>
