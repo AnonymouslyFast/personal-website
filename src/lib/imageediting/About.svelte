@@ -15,8 +15,7 @@
         <h4>Course Information</h4>
         <hr>
         <p>
-            This course is taught by Mrs. Wallace, at F.E. Dubose Career Center, in Manning, South Carolina. I am currently
-            taking this course as of a extracurricular credit for my high school diploma.
+            This course is taught by Mrs. Wallace, at F.E. Dubose Career Center, in Manning, South Carolina.
         </p>
     </div>
 </div>
