@@ -11,7 +11,7 @@
         }
 
         .nav-item {
-            width: 25vw !important;
+            width: 20vw !important;
             justify-self: center !important;
             margin-left: 1% !important;
             margin-right: 1% !important;

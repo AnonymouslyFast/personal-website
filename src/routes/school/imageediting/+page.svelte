@@ -40,11 +40,13 @@
         </div>
     </div>
 
-    {#if $selectedCapsule === 0}
-        <About />
-    {:else if $selectedCapsule === 1}
-        <Projects />
-    {/if}
+   <div id="bottom-container">
+       {#if $selectedCapsule === 0}
+           <About />
+       {:else if $selectedCapsule === 1}
+           <Projects />
+       {/if}
+   </div>
 
 </div>
 
@@ -65,6 +67,7 @@
 
     @media (max-width: 800px) {
         #back-btn {
+            display: flex;
             width: 60% !important;
             padding-left: 5vw !important;
             padding-right: 5vw !important;
@@ -78,12 +81,18 @@
         }
     }
 
+    #bottom-container {
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+
     #title-container {
         display: flex;
         flex-direction: column;
         width: 60vw;
         padding: 3vw;
         justify-self: center;
+        justify-items: center;
         margin-top: 3rem;
         background: #323232;
         border-radius: 5vw;
