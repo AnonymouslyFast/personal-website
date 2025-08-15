@@ -1,26 +1,16 @@
+<script lang="ts">
+    import GallaryCard from "$lib/imageediting/GallaryCard.svelte";
+    import DescriptionCard from "$lib/imageediting/DescriptionCard.svelte";
+</script>
+
 <div id="container">
     <div id="contents">
-        <i>Coming Soon™</i>
+        <GallaryCard />
+        <DescriptionCard />
     </div>
 </div>
 
 <style>
-    #container{
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 3rem;
-        justify-self: center;
-    }
-
-    #contents{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: space-evenly;
-    }
 
 
 </style>
