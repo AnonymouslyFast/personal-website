@@ -9,7 +9,8 @@
     onDestroy(unsubscribe);
 
     function selectImage(num: number) {
-        if (IEPhotos.at(num) === undefined || IEPhotos.at(num) === null) return;
+        console.log("selectImage", num);
+        if (IEPhotos.at(num) === undefined || num < 0) return;
         selectedImage.set(num)
     }
 </script>
@@ -22,7 +23,7 @@
                 &#60
             </button>
             <div id="title">{IEPhotos.at(photoIndex)?.name}</div>
-            <button class:disable={IEPhotos.at(photoIndex+1) === undefined || photoIndex+1 < 0}
+            <button class:disable={IEPhotos.at(photoIndex+1) === undefined || photoIndex+1 > IEPhotos.length-1}
                     class="arrow-btn" on:click={() => selectImage(photoIndex+1)}>
                 &#62
             </button>
