@@ -33,7 +33,7 @@
                     About
                 </button>
                 <button class="selector-item"  class:active={$selectedCapsule === 1}  on:click={() => select(1)}>
-                    Projects
+                    Gallery
                 </button>
             </div>
 

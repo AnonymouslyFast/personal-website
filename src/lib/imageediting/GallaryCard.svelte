@@ -22,7 +22,7 @@
                     class="arrow-btn"  on:click={() => selectImage(photoIndex -1)}>
                 &#60
             </button>
-            <div id="title">{IEPhotos.at(photoIndex)?.name}</div>
+            <div id="title">Gallery</div>
             <button class:disable={IEPhotos.at(photoIndex+1) === undefined || photoIndex+1 > IEPhotos.length-1}
                     class="arrow-btn" on:click={() => selectImage(photoIndex+1)}>
                 &#62
@@ -35,6 +35,16 @@
                     <img src={IEPhotos.at(photoIndex)?.path} alt="Photo of {IEPhotos.at(photoIndex)?.name}, created my me."/>
                 </a>
             </div>
+        </div>
+
+        <div id="image-content">
+            <h2>{IEPhotos.at(photoIndex)?.name}</h2>
+            <p id="image-date">{IEPhotos.at(photoIndex)?.date}</p>
+
+            <hr>
+            <p id="image-description">
+                {IEPhotos.at(photoIndex)?.description}
+            </p>
         </div>
     </div>
 </div>
@@ -85,7 +95,8 @@
         text-align: center;
         margin: 0;
         padding: 0;
-        font-size: 2rem;
+        font-weight: bolder;
+        font-size: 2.5rem;
     }
 
     #content {
@@ -93,18 +104,18 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
         gap: 2rem;
     }
 
     #image-container {
-        width: 50%;
+        width: 35%;
+        margin-left: 2%;
         background-color: #212121;
         border-radius: 2vw;
-        justify-self: center;
-        padding-top: 1%;
-        padding-bottom: 1%;
+        padding-top: 2%;
+        padding-bottom: 2%;
         display: flex;
+        justify-self: left;
         justify-content: center;
     }
 
@@ -119,19 +130,40 @@
 
     .image {
         transition: 0.3s ease-in-out;
-        width: 60%;
+        width: 80%;
         border-radius: 2vw;
     }
 
     .image:hover {
         transition: 0.5s ease-in-out;
-        width: 80%;
+        width: 85%;
         cursor: pointer;
     }
 
     img {
         width: 100%;
         border-radius: 2vw;
+    }
+
+    #image-content {
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #image-date {
+        font-size: 0.8rem;
+        font-weight: lighter;
+        margin-top: -1rem;
+    }
+
+    #image-description {
+        width: 100%;
+        font-size: 0.9rem;
+        margin: 0;
+        font-weight: normal;
     }
 
     .arrow-btn {
