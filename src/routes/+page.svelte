@@ -89,11 +89,11 @@
             margin-left: auto !important;
             margin-right: auto !important;
             box-shadow:
-                    rgba(147, 147, 147, 0.4) 0 5px,
-                    rgba(147, 147, 147, 0.3) 0 10px,
-                    rgba(147, 147, 147, 0.2) 0 15px,
-                    rgba(147, 147, 147, 0.1) 0 20px,
-                    rgba(147, 147, 147, 0.05) 0 25px !important;
+                    rgba(0, 0, 0, 0.25) 0 54px 55px,
+                    rgba(0, 0, 0, 0.12) 0 -12px 30px,
+                    rgba(0, 0, 0, 0.12) 0 4px 6px,
+                    rgba(0, 0, 0, 0.17) 0 12px 13px,
+                    rgba(0, 0, 0, 0.09) 0 -3px 5px;
         }
 
         #title-container {

@@ -1,16 +1,15 @@
 <script lang="ts">
     import GallaryCard from "$lib/imageediting/GallaryCard.svelte";
-    import DescriptionCard from "$lib/imageediting/DescriptionCard.svelte";
+    import GalleryList from "$lib/imageediting/GalleryList.svelte";
 </script>
 
 <div id="container">
     <div id="contents">
         <GallaryCard />
-        <DescriptionCard />
+        <GalleryList />
     </div>
 </div>
 
 <style>
-
 
 </style>

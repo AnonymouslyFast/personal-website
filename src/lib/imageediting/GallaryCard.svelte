@@ -72,6 +72,7 @@
     }
 
     #card {
+        transition: all 0.5s linear;
         display: flex;
         flex-direction: column;
         width: 60vw;
@@ -85,8 +86,8 @@
                 rgba(0, 0, 0, 0.25) 0 54px 55px,
                 rgba(0, 0, 0, 0.12) 0 -12px 30px,
                 rgba(0, 0, 0, 0.12) 0 4px 6px,
-                rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09)
-                0 -3px 5px;
+                rgba(0, 0, 0, 0.17) 0 12px 13px,
+                rgba(0, 0, 0, 0.09) 0 -3px 5px;
     }
 
     #title {
@@ -100,6 +101,7 @@
     }
 
     #content {
+        transition: all 0.5s linear;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -108,7 +110,7 @@
     }
 
     #image-container {
-        width: 35%;
+        max-width: 35%;
         margin-left: 2%;
         background-color: #212121;
         border-radius: 2vw;
@@ -116,6 +118,7 @@
         padding-bottom: 2%;
         display: flex;
         justify-self: left;
+        aspect-ratio: 16/20;
         justify-content: center;
     }
 
@@ -130,13 +133,24 @@
 
     .image {
         transition: 0.3s ease-in-out;
-        width: 80%;
+        width: 85%;
         border-radius: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .image img {
+        width: 100%;
+        object-fit: cover; /* fills box, may crop */
+        border-radius: 2vw;
+        justify-self: center;
     }
 
     .image:hover {
         transition: 0.5s ease-in-out;
-        width: 85%;
+        width: 95%;
         cursor: pointer;
     }
 
