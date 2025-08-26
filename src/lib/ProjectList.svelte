@@ -75,11 +75,9 @@
 
     .active {
         box-shadow:
-                rgba(147, 147, 147, 0.4) 0 5px,
-                rgba(147, 147, 147, 0.3) 0 10px,
-                rgba(147, 147, 147, 0.2) 0 15px,
-                rgba(147, 147, 147, 0.1) 0 20px,
-                rgba(147, 147, 147, 0.05) 0 25px !important;
+                rgba(29, 33, 40, 0.4) 0 0 0 2px,
+                rgba(29, 33, 40, 0.65) 0 4px 6px -1px,
+                rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     }
 
 
