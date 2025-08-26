@@ -23,11 +23,5 @@ export const IEPhotos: IEPhoto[] = [
         description: "This is a project on the layers on Photoshop, the subject is a random dude on the internet," +
             " and background is random landscape on the internet."
     },
-    {
-        name: "Layers Test",
-        path: base + "/imageediting/LayerTest.jpg",
-        date: "August 26th, 2025",
-        description: "This was a test given to grade how well we did with layers on Photoshop." +
-            "I followed a set of directions given, then I added noise to the text and the `2025` text at the bottom right."
-    },
+
 ];
