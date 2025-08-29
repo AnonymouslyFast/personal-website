@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  svelte-site:
+    build: .
+    container_name: svelte-site
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 128M
+    security_opt:
+      - no-new-privileges:true
