@@ -30,4 +30,14 @@ export const IEPhotos: IEPhoto[] = [
         description: "This was a test given to grade how well we did with layers on Photoshop." +
             "I followed a set of directions given, then I added noise to the text and the `2025` text at the bottom right."
     },
+    {
+        name: "Campbell's Soup Advertisement Redesign",
+        path: base + "/imageediting/Campbell-Soup-Redesign.jpg",
+        date: "September 3rd, 2025",
+        description: "This was a assignment to redesign the vintage Campbell's Tomato soup advertisement." +
+            "I made this by taking the original image which I got from a amazon listing image, then I removed the original"
+        + "Text from the image, then created my own text with a more modern color, and font, lastly I got the Campbell's logo" +
+            "from their website, and added it to the image."
+    },
+
 ];

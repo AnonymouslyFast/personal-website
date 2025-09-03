@@ -18,31 +18,42 @@
 </script>
 
 <div id="galleryListContainer">
-    {#each IEPhotos as photo, i }
-        <button on:click={() => selectPhoto(i)} class="galleryListItem">
-            <div class="galleryListItemContent">
-                <div class="galleryItemImage">
-                    <img class:active={i === photoIndex} src={photo?.path} alt="">
+    <div id="galleryListContent">
+        {#each IEPhotos as photo, i }
+            <button on:click={() => selectPhoto(i)} class="galleryListItem">
+                <div class="galleryListItemContent">
+                    <div class="galleryItemImage">
+                        <img class:active={i === photoIndex} src={photo?.path} alt="">
+                    </div>
                 </div>
-            </div>
-        </button>
-    {/each}
+            </button>
+        {/each}
+    </div>
 </div>
 
 <style>
     #galleryListContainer{
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         gap: 3rem;
+        margin-top: 2rem;
+    }
+
+    #galleryListContent{
+        padding-left: 5vw;
+        padding-right: 5vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5rem;
         margin-top: 2rem;
         justify-content: center;
     }
 
     .galleryListItem{
         width: 15%;
-        display: flex;
         border-radius: 2vw;
         background: none;
         border: none;
@@ -51,9 +62,6 @@
     .galleryListItemContent{
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 
     .active {
