@@ -17,55 +17,89 @@
 
 </script>
 
-<div id="galleryListContainer">
-    <div id="galleryListContent">
-        {#each IEPhotos as photo, i }
-            <button on:click={() => selectPhoto(i)} class="galleryListItem">
-                <div class="galleryListItemContent">
-                    <div class="galleryItemImage">
-                        <img
-                                class:active={i === photoIndex}
-                                src="{photo?.path.replace('.jpg', '.webp').replace('imageediting/', 'imageediting/webp/')}"
-                                alt=""
-                        />
-                    </div>
-                </div>
-            </button>
-        {/each}
+<div id="listContainer">
+    <div id="listContent">
+
+        <div id="title">
+            <h2>All Images</h2>
+        </div>
+
+        <div id="items-container">
+            <div id="items-content">
+
+                {#each IEPhotos as photo, i}
+                    <button on:click={() => selectPhoto(i)} class="photo-container">
+                        <div class="photo-content">
+                            <img
+                                    class:active={i === photoIndex}
+                                    src="{photo?.path.replace('.jpg', '.webp').replace('imageediting/', 'imageediting/webp/')}"
+                                    alt=""
+                            />
+                        </div>
+                    </button>
+                {/each}
+
+            </div>
+        </div>
     </div>
 </div>
 
 <style>
-    #galleryListContainer{
+    #listContainer{
         width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        gap: 3rem;
-        margin-top: 2rem;
     }
 
-    #galleryListContent{
-        padding-left: 5vw;
-        padding-right: 5vw;
+    #listContent{
+        width: 100%;
+        height: auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 5rem;
-        margin-top: 2rem;
+    }
+
+    #title {
+        flex: 1;
+        margin-top: 2%;
+        text-align: center;
+    }
+
+    #items-container {
+        width: 100%;
+        display: flex;
         justify-content: center;
     }
 
-    .galleryListItem{
-        width: 15%;
+    #items-content{
+        width: 60vw;
+        display: flex;
+        flex-direction: row;
+        padding: 2vw;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
         border-radius: 2vw;
-        background: none;
-        border: none;
+        border: #cccccc 2px solid;
     }
 
-    .galleryListItemContent{
-        width: 100%;
-        height: auto;
+    .photo-container {
+        border-radius: 2vw;
+        width: 30%;
+        height: fit-content;
+        background: none;
+        border: none;
+        display: flex;
+    }
+
+    .photo-container {
+        border-radius: 2vw;
+        width: 30%;
+        height: fit-content;
+        background: none;
+        border: none;
+        display: flex;
     }
 
     .active {
@@ -78,9 +112,13 @@
                 rgba(147, 147, 147, 0.05) 0 25px;
     }
 
-    img {
+    .photo-content {
         width: 100%;
+    }
+
+    img {
         border-radius: 2vw;
+        width: 100%;
         transition: all 0.5s linear;
         box-shadow:
                 rgba(147, 147, 147, 0.25) 0 54px 55px,
@@ -91,8 +129,7 @@
     }
 
     img:hover {
-        transition: 0.3s all ease-in-out;
-        cursor: pointer;
+        transition: all 0.5s linear;
         box-shadow:
                 rgba(147, 147, 147, 0.4) 0 5px,
                 rgba(147, 147, 147, 0.3) 0 10px,
@@ -100,5 +137,4 @@
                 rgba(147, 147, 147, 0.1) 0 20px,
                 rgba(147, 147, 147, 0.05) 0 25px;
     }
-
 </style>

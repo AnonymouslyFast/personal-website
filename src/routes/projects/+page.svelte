@@ -21,18 +21,25 @@
     </div>
 </div>
 
-<div id="copyright">
-    © 2025 Caleb Shearer. All rights reserved.
+<div id="footer-container">
+    <div id="copyright">
+        © 2025 Caleb Shearer. All rights reserved.
+    </div>
 </div>
 
 <style>
 
-    #copyright{
-        width: 100%;
-        text-align: center;
-        margin-top: 2rem;
-        position: relative;
+    #footer-container {
+        position: fixed;
+        margin-bottom: 1%;
         bottom: 0;
+        width: 100%;
+    }
+
+    #copyright{
+        bottom: 0;
+        width: inherit;
+        text-align: center;
         font-size: 0.7rem;
     }
 
@@ -70,6 +77,7 @@
         margin-top: 5vw;
         display: flex;
         flex-direction: column;
+        margin-bottom: 4%;
     }
 
     #main-content {
