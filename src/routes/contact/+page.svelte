@@ -30,7 +30,7 @@
                 <p>If so use one of my contacts to reach me, and below is my redacted resume!</p>
                 
                 <div id="resume">
-                    <a href="resume.png"><img src="resume.png" alt="Caleb Shearer's resume"></a>
+                    <a href="resume.png"><img src="webp/resume.webp" alt="Caleb Shearer's resume"></a>
                 </div>
             </div>
         </div>

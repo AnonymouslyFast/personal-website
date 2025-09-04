@@ -9,7 +9,7 @@
             <div id="main-content">
                 <div id="image-container">
                     <img
-                            src="unformal-selfie.jpeg"
+                            src="webp/unformal-selfie.webp"
                             alt="Unformal selfie of me (Caleb Shearer) visibly wearing glasses and a black shirt at my desk."
                             id="title-image"
                     />

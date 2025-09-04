@@ -32,7 +32,10 @@
         <div id="image-container">
             <div class="image">
                 <a href={IEPhotos.at(photoIndex)?.path}>
-                    <img src={IEPhotos.at(photoIndex)?.path} alt="Photo of {IEPhotos.at(photoIndex)?.name}, created my me."/>
+                    <img
+                            src="{IEPhotos.at(photoIndex)?.path.replace('.jpg', '.webp').replace('imageediting/', 'imageediting/webp/')}"
+                            alt="Photo of {IEPhotos.at(photoIndex)?.name}, created my me."
+                    />
                 </a>
             </div>
         </div>

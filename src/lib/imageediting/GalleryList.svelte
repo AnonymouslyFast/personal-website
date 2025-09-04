@@ -23,7 +23,11 @@
             <button on:click={() => selectPhoto(i)} class="galleryListItem">
                 <div class="galleryListItemContent">
                     <div class="galleryItemImage">
-                        <img class:active={i === photoIndex} src={photo?.path} alt="">
+                        <img
+                                class:active={i === photoIndex}
+                                src="{photo?.path.replace('.jpg', '.webp').replace('imageediting/', 'imageediting/webp/')}"
+                                alt=""
+                        />
                     </div>
                 </div>
             </button>
