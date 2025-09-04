@@ -68,6 +68,25 @@
          text-align: center;
      }
 
+    :global(html),
+    :global(body) {
+        margin: 0;
+        height: 100%;
+        background: radial-gradient(circle 100vw at center, #323232 0%, #211b1b 100%);
+        color: #cccccc;
+        font-family: "Comfortaa", sans-serif;
+    }
+
+    /* Paint the gradient as a fixed layer behind everything */
+    :global(body)::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background: radial-gradient(circle 100vw at center, #323232 0%, #211b1b 100%);
+    }
+
 </style>
 
 
