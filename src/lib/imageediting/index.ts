@@ -39,5 +39,15 @@ export const IEPhotos: IEPhoto[] = [
         + "Text from the image, then created my own text with a more modern color, and font, lastly I got the Campbell's logo" +
             "from their website, and added it to the image."
     },
+    {
+        name: "Polaroid Collage",
+        path: base + "/imageediting/Polaroid-Collage.jpg",
+        date: "September 5th, 2025",
+        description: "This assignment was to make a collage of `polaroids` on a image, this let me learn masking and" +
+            " other techniques in photoshop. I made this image by first setting up the layers as: background, black, and " +
+            "visible, then mask the image inside of the visible layer, then create a new layer called `border` which is " +
+            "the border of the polaroid. I the duplicate layer of background, black layer, and border layer all in a group" +
+            ". After that I could just copy and paste the group, then move the group somewhere else to create this image."
+    },
 
 ];

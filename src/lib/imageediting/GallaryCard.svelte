@@ -230,12 +230,6 @@
                 rgba(0, 0, 0, 0.09) 0 -3px 5px;
     }
 
-    #copyright {
-        width: 100%;
-        display: inline;
-        margin-left: 15%;
-    }
-
     a {
         color:  rgba(84, 84, 84, 100)
     }
