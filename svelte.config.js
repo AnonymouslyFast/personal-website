@@ -4,7 +4,7 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
 	kit: {
 		adapter: adapter({
-			fallback: undefined, // TODO: Change to a file path once made.
+			fallback: undefined
 		})
 	},
 

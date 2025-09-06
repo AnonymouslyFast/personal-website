@@ -90,7 +90,13 @@
         height: fit-content;
         background: none;
         border: none;
+        cursor: pointer;
         display: flex;
+    }
+
+    .photo-container:active {
+        scale: 98%;
+        transition: 0.5ms all linear;
     }
 
     .photo-container {
