@@ -3,7 +3,7 @@ services:
     build: .
     container_name: svelte-site
     ports:
-      - "80:3000"
+      - "8080:3000"
     restart: unless-stopped
     deploy:
       resources:
@@ -12,4 +12,9 @@ services:
           memory: 128M
     security_opt:
       - no-new-privileges:true
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      HOST: 0.0.0.0
+
 
