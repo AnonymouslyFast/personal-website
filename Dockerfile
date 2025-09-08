@@ -4,7 +4,7 @@ FROM node:lts-alpine3.22 AS build
 # Install build tools
 RUN apk add --no-cache python3 make g++
 
-# Create non-root user for building
+# Create non-root user
 RUN addgroup -S svelte && adduser -S svelte -G svelte
 
 WORKDIR /app
@@ -30,10 +30,13 @@ WORKDIR /app
 COPY --from=build /app/build ./build
 COPY --from=build /app/package*.json ./
 
+# Give svelte user ownership of /app
+RUN chown -R svelte:svelte /app
+
 # Switch to non-root user
 USER svelte
 
-# Install only production dependencies
+# Install production dependencies
 RUN npm install --production
 
 EXPOSE 3000
