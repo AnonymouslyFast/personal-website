@@ -1,7 +1,6 @@
-# --- Build stage ---
 FROM node:lts-alpine3.22 AS build
 
-# Install build tools
+# Install build tools for npm
 RUN apk add --no-cache python3 make g++
 
 # Create non-root user
@@ -12,31 +11,37 @@ WORKDIR /app
 # Switch to non-root user
 USER svelte
 
+# Copy package.json first for caching
 COPY package*.json ./
+
+# Run npm install
 RUN npm install
 
 COPY . .
+
+# Build the SvelteKit project
 RUN npm run build
 
-# --- Run stage ---
-FROM node:lts-alpine3.22 AS run
 
-# Create non-root user
-RUN addgroup -S svelte && adduser -S svelte -G svelte
+# Run
+FROM node:lts-alpine3.22 AS run
 
 WORKDIR /app
 
-# Copy built app and package.json
+# Copy build and package.json from build stage
 COPY --from=build /app/build ./build
 COPY --from=build /app/package*.json ./
 
-# Give svelte user ownership of /app
+# Create same non-root user
+RUN addgroup -S svelte && adduser -S svelte -G svelte
+
+# Give ownership of /app to user
 RUN chown -R svelte:svelte /app
 
 # Switch to non-root user
 USER svelte
 
-# Install production dependencies
+# Install only production dependencies
 RUN npm install --production
 
 EXPOSE 3000
