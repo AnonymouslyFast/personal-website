@@ -15,7 +15,7 @@
                 <div id="contact-list">
                     <div class="contact-item">
                         <img src="email-icon.svg" alt="email-icon" />
-                        <a href="mailto:fastskating12@gmail.com">fastskating12@gmail.com</a>
+                        <a href="mailto:public@anonymouslyfast.com">public@anonymouslyfast.com</a>
                     </div>
 
                     <div class="contact-item">

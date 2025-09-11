@@ -31,7 +31,7 @@
                         <a href="https://www.youtube.com/@AnonymouslyFast" class="connection-btn">
                             <img src="youtube-icon.svg" alt="YouTube" />
                         </a>
-                        <a href="mailto:fastskating12@gmail.com" class="connection-btn">
+                        <a href="mailto:public@anonymouslyfast.com" class="connection-btn">
                             <img src="email-icon.svg" alt="Email" />
                         </a>
                     </div>
