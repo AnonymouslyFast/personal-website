@@ -49,5 +49,13 @@ export const IEPhotos: IEPhoto[] = [
             "the border of the polaroid. I the duplicate layer of background, black layer, and border layer all in a group" +
             ". After that I could just copy and paste the group, then move the group somewhere else to create this image."
     },
-
+    {
+        name: "Fruit Bowl",
+        path: base + "/imageediting/FruitBowl_project.jpg",
+        date: "September 16th, 2025",
+        description: "This assignment was to take a bowl and a assortment of fruits and use layer masking, and layers " +
+            "to make a fruit bowl. I made this by taking the bowl image which I got from a stock photos website, and " +
+            "I copied and masked out the front of the bowl, and put it as the top layer. After that I just got the fruit" +
+            " photos I got from the same source as the bowl, and masked them out and put them behind the front of the bowl."
+    },
 ];
