@@ -63,6 +63,12 @@
             width: 90% !important;
         }
     }
+    #container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     #main-container {
         display: flex;

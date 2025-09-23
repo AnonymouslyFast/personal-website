@@ -92,9 +92,19 @@
         }
     }
 
+    #container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #bottom-container {
         width: 100%;
         padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #title-container {

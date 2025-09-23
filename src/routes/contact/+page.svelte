@@ -86,6 +86,13 @@
 
     }
 
+    #container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #main-container {
         margin-top: 4rem;
         width: 100%;

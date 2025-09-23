@@ -58,4 +58,14 @@ export const IEPhotos: IEPhoto[] = [
             "I copied and masked out the front of the bowl, and put it as the top layer. After that I just got the fruit" +
             " photos I got from the same source as the bowl, and masked them out and put them behind the front of the bowl."
     },
+    {
+        name: "Text Masking",
+        path: base + "/imageediting/TextMask.jpg",
+        date: "September 22nd, 2025",
+        description: "This assignment was to create a test mask by a background image, I went further and added my own" +
+            " additions aswell. To make this, I just grabbed a free stock photo off of pexels and imported it into PS" +
+            " I then created a text group, and put it under the background layer, I also created a solid background color" +
+            " which I put under the text group. I then duplicated the background image for later, then I right clicked the background " +
+            " image, and hit create clipping mask. Then I just masked out the subject in the photo (on the right)."
+    },
 ];
