@@ -58,6 +58,18 @@
             width: 60% !important;
         }
 
+        #content {
+            justify-content: center !important;
+        }
+
+        #image-container {
+            max-width: 100% !important;
+        }
+
+        #image-content {
+            width: 90% !important;
+        }
+
         #content-header {
             gap: 5% !important;
         }
