@@ -4,24 +4,14 @@ FROM node:lts-alpine3.22 AS build
 # Install build tools
 RUN apk add --no-cache python3 make g++ bash
 
-# Create non-root user
-RUN addgroup -S svelte && adduser -S svelte -G svelte
-
+# Set working directory
 WORKDIR /app
 
-# Copy package.json first
+# Copy package files and install dependencies
 COPY package*.json ./
-
-# Install dependencies AS ROOT to avoid permission errors
 RUN npm install
 
-# Change ownership of /app and node_modules to non-root user
-RUN chown -R svelte:svelte /app
-
-# Switch to non-root user
-USER svelte
-
-# Copy the rest of the project
+# Copy the rest of the project (source + static assets)
 COPY . .
 
 # Build SvelteKit project
@@ -35,15 +25,16 @@ WORKDIR /app
 # Create non-root user
 RUN addgroup -S svelte && adduser -S svelte -G svelte
 
-# Copy build + package.json + node_modules from build stage
+# Copy build, node_modules, and static assets from build stage
 COPY --from=build /app/build ./build
-COPY --from=build /app/package*.json ./
 COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/static ./static
+COPY --from=build /app/package*.json ./
 
 # Create directories for logs / cache / temp
 RUN mkdir -p /app/logs /app/cache /app/tmp
 
-# Give full ownership to non-root user
+# Set ownership to non-root user
 RUN chown -R svelte:svelte /app
 
 # Switch to non-root user
