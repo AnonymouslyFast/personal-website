@@ -1,6 +1,8 @@
 services:
   svelte-site:
     build: .
+    ports:
+      - "127.0.0.1:3000:3000"
     container_name: svelte-site
     restart: unless-stopped
     deploy:
