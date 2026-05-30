@@ -62,13 +62,17 @@
 
 body {
     margin: 0;
-    height: 100%;
+    min-height: 80vh;
     background: var(--color-bg-page);
 
     font-family: "Geist", sans-serif;
     color: var(--color-text-primary);
 
+
     display: grid;
     grid-template-areas: "nav nav" "header zheader" "content content" "footer footer";
+    grid-template-rows: auto 1fr auto;
 }
+
+
 

@@ -31,6 +31,7 @@
          display: inline-flex;
          gap: 1rem;
          justify-content: space-evenly;
+         grid-area: nav;
      }
 
     .nav-item {

@@ -8,11 +8,10 @@
 
 <style>
    footer {
-       position: absolute;
-       bottom: 0;
        justify-self: center;
        align-self: center;
        font-size: small;
        padding: 1rem;
+       grid-area: footer;
    }
 </style>

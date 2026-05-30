@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <h4>Introduction</h4>
 <hr>
 <p>
@@ -36,6 +39,7 @@
 
     hr {
         width: 80%;
+        border-color: var(--color-text-muted);
     }
 
 </style>

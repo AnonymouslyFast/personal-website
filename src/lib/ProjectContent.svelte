@@ -12,7 +12,7 @@
 {#if project}
     <div id="content">
         <h2>{project.name}</h2>
-        <p style="font-weight: lighter; margin-top: -1rem; margin-bottom: 2rem;">{project.type}</p>
+        <p style="font-weight: lighter; margin-top: -1rem; margin-bottom: 2rem; color: var(--color-text-muted)">{project.type}</p>
         <svelte:component this={project.component} />
     </div>
 {/if}

@@ -28,5 +28,6 @@
 
     hr {
         width: 80%;
+        border-color: var(--color-text-muted);
     }
 </style>

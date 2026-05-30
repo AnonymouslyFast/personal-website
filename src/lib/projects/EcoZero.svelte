@@ -40,11 +40,12 @@
 
     hr {
         width: 80%;
+        border-color: var(--color-text-muted);
     }
 
     #yt-frame {
-        border-radius: 2vw;
+        border-radius: 0.5vw;
         width: 80%;
-        height: 315px;
+        height: 50vh;
     }
 </style>

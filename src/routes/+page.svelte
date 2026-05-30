@@ -56,6 +56,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        grid-area: content;
     }
 
     .card {

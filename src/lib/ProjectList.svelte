@@ -19,12 +19,6 @@
     {/each}
 </div>
 <style>
-    @media (max-width: 800px) {
-        .list-item {
-            width: 70% !important;
-        }
-    }
-
     #content {
         margin-bottom: 2rem;
         width: 100%;
@@ -43,7 +37,6 @@
 
     .list-item {
         background: inherit;
-        border: none;
         color: inherit;
         font-family: inherit;
         font-size: inherit;
@@ -52,32 +45,20 @@
         width: 50%;
         padding: 2%;
         display: flex;
-        border-radius: 2vw;
+        border-radius: 0.5vw;
         margin-top: 1rem;
-        box-shadow:
-                rgba(0, 0, 0, 0.25) 0 54px 55px,
-                rgba(0, 0, 0, 0.12) 0 -12px 30px,
-                rgba(0, 0, 0, 0.12) 0 4px 6px,
-                rgba(0, 0, 0, 0.17) 0 12px 13px,
-                rgba(0, 0, 0, 0.09) 0 -3px 5px;
+        box-shadow: var(--shadow-card);
+        border: hidden;
     }
 
     .list-item:hover {
-        transition: ease-in 0.25s;
         cursor: pointer;
-        box-shadow:
-                rgba(65, 65, 65, 0.25) 0 54px 55px,
-                rgba(65, 65, 65, 0.12) 0 -12px 30px,
-                rgba(65, 65, 65, 0.12) 0 4px 6px,
-                rgba(65, 65, 65, 0.17) 0 12px 13px,
-                rgba(65, 65, 65, 0.09) 0 -3px 5px;
+        border: 1px solid var(--color-border-subtle);
     }
 
     .active {
-        box-shadow:
-                rgba(29, 33, 40, 0.4) 0 0 0 2px,
-                rgba(29, 33, 40, 0.65) 0 4px 6px -1px,
-                rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        border: 1px solid var(--color-border);
+        box-shadow: none;
     }
 
 
