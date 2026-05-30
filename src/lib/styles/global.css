@@ -1,0 +1,74 @@
+:root {
+    /* Backgrounds */
+    --color-bg-page:    #080C14;
+    --color-bg-card:    #0D1929;
+    --color-bg-subtle:  #0F1E33;
+
+    /* Borders */
+    --color-border:        #1E2D42;
+    --color-border-subtle: #152236;
+
+    /* Text */
+    --color-text-primary:  #D0E8FF;
+    --color-text-muted:    #5B7FA3;
+    --color-text-disabled: #2A4060;
+
+    /* Accents */
+    --color-accent-blue: #58A6FF;
+    --color-accent-cyan: #4DD9C0;
+
+    /* Shadows */
+    --shadow-card:     0 8px 40px rgba(0, 0, 0, 0.7);
+    --shadow-elevated: 0 12px 60px rgba(0, 0, 0, 0.75);
+
+    /* Primary button */
+    --btn-primary-bg:       #58A6FF;
+    --btn-primary-bg-hover: #79BAFF;
+    --btn-primary-text:     #080C14;
+
+    /* Secondary button */
+    --btn-secondary-bg:       #0F1E33;
+    --btn-secondary-bg-hover: #1A2E4A;
+    --btn-secondary-text:     #D0E8FF;
+    --btn-secondary-border:   #1E2D42;
+
+    /* Ghost button */
+    --btn-ghost-bg:       transparent;
+    --btn-ghost-bg-hover: rgba(88, 166, 255, 0.08);
+    --btn-ghost-text:     #58A6FF;
+    --btn-ghost-border:   #2A4A6E;
+
+    /* Danger button */
+    --btn-danger-bg:       #8B2020;
+    --btn-danger-bg-hover: #A32828;
+    --btn-danger-text:     #FFD0D0;
+
+    /* Success button */
+    --btn-success-bg:       #0D3330;
+    --btn-success-bg-hover: #124540;
+    --btn-success-text:     #4DD9C0;
+
+    /* Shared */
+    --btn-border-radius:    1.5vw;
+    --btn-padding:          10px 20px;
+    --btn-font-weight:      500;
+    --btn-disabled-opacity: 0.4;
+}
+
+
+@view-transition {
+    navigation: auto;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background: var(--color-bg-page);
+
+    font-family: "Geist", sans-serif;
+    color: var(--color-text-primary);
+
+    display: grid;
+    grid-template-areas: "nav nav" "header zheader" "content content" "footer footer";
+}
+

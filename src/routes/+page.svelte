@@ -1,257 +1,169 @@
-<script lang="ts">
+<script>
     import Navbar from "$lib/Navbar.svelte";
+    import Copyright from "$lib/Copyright.svelte";
 </script>
 
-<div id="container">
-    <Navbar />
-
-    <div id="main">
-            <div id="main-content">
-                <div id="image-container">
+<div>
+    <Navbar/>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-photo">
                     <img
                             src="webp/unformal-selfie.webp"
                             alt="Unformal selfie of me (Caleb Shearer) visibly wearing glasses and a black shirt at my desk."
                             id="title-image"
                     />
                 </div>
+                <div class="card-text">
+                    <h1>Hello, I'm Caleb Shearer</h1>
+                    <p>I'm an aspiring software engineer & game developer, with multiple years of Minecraft plugin development, and Unity game development, at my side.</p>
 
-                <div id="title-container">
-                    <h1 id="title-head">
-                        Hello, I'm Caleb Shearer
-                    </h1>
-                    <p id="description-para">
-                        I'm a high school senior planning to major in Computer Engineering or Computer Science.
-                        In the future I'm planning to become a game developer, and I'm working hard to get to that goal.
-                    </p>
-
-                    <div id="connections-container">
-                        <a href="https://github.com/AnonymouslyFast" class="connection-btn">
-                            <img src="github-mark.svg" alt="GitHub" />
+                    <div class="connections-container">
+                        <a href="https://github.com/AnonymouslyFast" target="_blank" class="connections-item">
+                        <span class="connections-item-content">
+                            <img src="github-mark.svg" alt="Github logo">
+                            Github
+                        </span>
                         </a>
-                        <a href="https://www.youtube.com/@AnonymouslyFast" class="connection-btn">
+                        <a href="https://www.youtube.com/@AnonymouslyFast" target="_blank" class="connections-item">
+                        <span class="connections-item-content">
                             <img src="youtube-icon.svg" alt="YouTube" />
+                            Youtube
+                        </span>
                         </a>
-                        <a href="mailto:public@anonymouslyfast.com" class="connection-btn">
+                        <a href="mailto:caleb.shearer@anonymouslyfast.com" target="_blank" class="connections-item">
+                        <span class="connections-item-content">
                             <img src="email-icon.svg" alt="Email" />
+                            Email
+                        </span>
                         </a>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 </div>
 
-<div id="copyright">
-    © 2025 Caleb Shearer. All rights reserved.
-</div>
+
+<Copyright />
 
 <style>
-
-    #copyright{
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        bottom: 2%;
-        font-size: 0.7rem;
-    }
-
-    @view-transition {
-        navigation: auto;
-    }
-    
-    @media (max-width: 800px) {
-
-
-        #container {
-            width: 100vw !important;
-            height: auto !important;
-            justify-content: center !important;
-            justify-self: center !important;
-        }
-
-        #main {
-            justify-self: center !important;
-            width: 85vw !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
-            height: inherit !important;
-            gap: unset !important;
-        }
-
-        #main-content {
-            width: inherit !important;
-            justify-content: center !important;
-        }
-
-        #image-container {
-            margin-top: 4vw;
-            justify-self: unset !important;
-        }
-
-        #title-image {
-            width: 40vw !important;
-            height: auto !important;
-            justify-self: unset !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
-            box-shadow:
-                    rgba(0, 0, 0, 0.25) 0 54px 55px,
-                    rgba(0, 0, 0, 0.12) 0 -12px 30px,
-                    rgba(0, 0, 0, 0.12) 0 4px 6px,
-                    rgba(0, 0, 0, 0.17) 0 12px 13px,
-                    rgba(0, 0, 0, 0.09) 0 -3px 5px;
-        }
-
-        #title-container {
-            max-width: 85vw !important;
-            justify-self: center !important;
-            justify-content: center !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
-            margin-top: 0 !important;
-        }
-
-        #connections-container {
-            margin-left: 0 !important;
-            margin-top: 6vw !important;
-            padding-bottom: 3vw !important;
-            width: 100% !important;
-            justify-self: center !important;
-        }
-
-        .connection-btn{
-            width: 20vw !important;
-            height: 5vw !important;
-            margin-right: 5% !important;
-        }
-
-        .connection-btn img {
-            width: 4vw !important;
-        }
-
-        #title-head {
-            justify-self: center !important;
-            width: inherit !important;
-            font-size: 1rem !important;
-        }
-
-        #description-para {
-            justify-self: center !important;
-            width: 90% !important;
-            font-size: 0.9rem !important;
-        }
-
-
-    }
-    
-    #container {
-        width: 100%;
-        height: 100%;
+    /* ====== Card Set Up ====== */
+    .container {
+        width: 100vw;
+        height: 80vh;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
-    #main {
-        display: flex;
-        flex-direction: column;
+    .card {
         width: 60vw;
-        padding: 3vw;
-        justify-self: center;
-        margin-top: 3rem;
-        background: #323232;
-        border-radius: 5vw;
-        box-shadow:
-                rgba(0, 0, 0, 0.25) 0 54px 55px,
-                rgba(0, 0, 0, 0.12) 0 -12px 30px,
-                rgba(0, 0, 0, 0.12) 0 4px 6px,
-                rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09)
-                0 -3px 5px;
+        height: 60vh;
+        background-color: var(--color-bg-card);
+        border-radius: 2rem;
+        box-shadow: var(--shadow-card);
+        transition: ease-in-out 0.3s;
     }
 
-    #main-content {
-        width: 100%;
+    .card-content {
         height: 100%;
-        flex: 1;
-        gap: 3rem;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        gap: 1rem;
         flex-wrap: wrap;
-        position: relative;
-    }
-
-    #image-container {
-        margin-left: 3%;
-        display: flex;
-        flex: 1;
-        position: relative;
-    }
-
-    #title-image {
-        width: 15vw;
-        height: 20vw;
-        border-radius: 2vw;
-        box-shadow:
-                rgba(147, 147, 147, 0.4) -5px 5px,
-                rgba(147, 147, 147, 0.3) -10px 10px,
-                rgba(147, 147, 147, 0.2) -15px 15px,
-                rgba(147, 147, 147, 0.1) -20px 20px,
-                rgba(147, 147, 147, 0.05) -25px 25px;
-    }
-
-    #title-container {
-        max-height: 100%;
-        flex: 1;
-        max-width: 50%;
-        margin-top: clamp(5%, 8%, 8%);
-        margin-right: 15%;
-        text-align: center;
-    }
-
-    #title-head {
-        font-size: clamp(0.5rem, 1.4rem, 1.4rem);
-        font-weight: bold
-    }
-
-    #description-para {
-        font-size: clamp(0.5rem, 1rem, 1rem);
-        font-weight: lighter;
-    }
-
-    #connections-container {
-        display: inline-flex;
-        justify-content: space-evenly;
-        margin-top: 1rem;
-        width: 100%;
-    }
-
-    .connection-btn {
-        margin-left: 1vw;
-        width: 3vw;
-        height: 2vw;
-        border-radius: 5vw;
-        box-shadow:
-                rgba(0, 0, 0, 0.25) 0 54px 55px,
-                rgba(0, 0, 0, 0.12) 0 -12px 30px,
-                rgba(0, 0, 0, 0.12) 0 4px 6px,
-                rgba(0, 0, 0, 0.17) 0 12px 13px,
-                rgba(0, 0, 0, 0.09) 0 -3px 5px;
         justify-content: center;
-        background: #323232;
+        align-items: center;
+    }
+    /* ====== Card Set Up ====== */
+
+    /* ====== Card Content ====== */
+    .card-photo {
+        position: relative;
+        width: 18vw;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            border-radius: 1vw;
+        }
     }
 
-    .connection-btn:hover {
-        transition: ease-in 0.2s;
-        box-shadow:
-                rgba(84, 84, 84, 0.25) 0 54px 55px,
-                rgba(84, 84, 84, 0.12) 0 -12px 30px,
-                rgba(84, 84, 84, 0.12) 0 4px 6px,
-                rgba(84, 84, 84, 0.17) 0 12px 13px,
-                rgba(84, 84, 84, 0.09) 0 -3px 5px;
+    .card-text {
+        width: 50%;
+
+        h1{
+            text-align: left;
+            border-bottom: 1px solid var(--color-text-secondary);
+            padding-bottom: 0.5rem;
+            width: 100%;
+            font-size: 1.6vw;
+            font-weight: bold;
+        }
+
+        p {
+            text-align: left;
+            font-size: 1.2vw;
+            font-weight: normal;
+        }
     }
 
-    .connection-btn img {
-        margin-top: 0.4vw;
-        width: 40%;
+    .connections-container {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 1rem;
+
+        .connections-item {
+            border-radius: 1vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background: var(--btn-secondary-bg);
+            width: 25%;
+            text-decoration: none;
+            color: var(--btn-secondary-text);
+            font-family: inherit;
+            font-size: 0.8vw;
+            font-weight: lighter;
+
+            span {
+                padding: 0.5rem;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10%;
+
+                img {
+                    width: 40%;
+                }
+
+            }
+        }
+
+        .connections-item:hover {
+            background-color: var(--btn-secondary-bg-hover);
+            transition: ease-in-out 0.3s;
+
+        }
+
+        .connections-item:active {
+            box-shadow: 0 0.3rem 1rem rgb(154 154 154);
+            transition: ease-in-out 0.3s;
+        }
     }
+
+
+    /* ====== Card Content ====== */
+
+
+
+
 </style>

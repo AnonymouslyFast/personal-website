@@ -4,9 +4,9 @@
 
 
 <div id="container">
-    <h2>{error?.status ?? "NULL"}</h2>
+    <h2>{error?.status ?? "404"}</h2>
     <hr>
-    <p>{error?.message ?? "Something went wrong!"}</p>
+    <p>{error?.message ?? "Page was not found!"}</p>
 
     <a href="../">Okay</a>
 </div>
@@ -23,25 +23,6 @@
         position: absolute;
         bottom: 2%;
         font-size: 0.7rem;
-    }
-
-    :global(html),
-    :global(body) {
-        margin: 0;
-        height: 100%;
-        background: radial-gradient(circle 100vw at center, #323232 0%, #211b1b 100%);
-        color: #cccccc;
-        font-family: "Comfortaa", sans-serif;
-    }
-
-    /* Paint the gradient as a fixed layer behind everything */
-    :global(body)::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        z-index: -1;
-        pointer-events: none;
-        background: radial-gradient(circle 100vw at center, #323232 0%, #211b1b 100%);
     }
 
     body {

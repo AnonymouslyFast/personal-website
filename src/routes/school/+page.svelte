@@ -43,17 +43,6 @@
         font-size: 0.7rem;
     }
 
-    @view-transition {
-        navigation: auto;
-    }
-
-    :global(html) {
-        margin: 0;
-        font-family: "Comfortaa", sans-serif;
-        color: #cccccc;
-        background: radial-gradient(circle 100vw at center, #323232 0%, #211b1b 100%);
-    }
-
     @media (max-width: 800px) {
         .course-container {
             width: 80% !important;

@@ -3,98 +3,61 @@
     import { base } from '$app/paths';
 </script>
 
-<style>
-    @media (max-width: 800px) {
-        #navbar {
-            width: 100% !important;
-            height: auto !important;
-        }
-
-        .nav-item {
-            width: 20vw !important;
-            justify-self: center !important;
-            margin-left: 1% !important;
-            margin-right: 1% !important;
-        }
-
-        .nav-item p {
-            width: 100% !important;
-            font-size: 0.8rem !important;
-            height: 100% !important;
-            align-self: center;
-        }
-    }
-
-     #navbar {
-         margin-top: 2vh;
-         width: 50vw;
-         height: 4vw;
-         padding-left: 2vw;
-         padding-right: 2vw;
-         display: inline-flex;
-         gap: 1rem;
-         justify-content: space-evenly;
-     }
-
-    nav {
-        display: flex;
-        justify-items: center;
-    }
-
-
-     .active {
-         box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
-     }
-
-     .nav-item {
-         font-size: 1.4vw;
-         width: 25%;
-         background: #424242;
-         backdrop-filter: blur(5px);
-         border-radius: 2vw;
-     }
-
-     .nav-item:hover {
-         transition: ease-in 0.2s;
-         box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
-     }
-
-     a {
-         text-decoration: none;
-         color: inherit;
-     }
-
-     .nav-item p {
-         text-align: center;
-     }
-
-    :global(html),
-    :global(body) {
-        margin: 0;
-        height: 100%;
-        background: radial-gradient(circle 100vw at center, #323232 0%, #211b1b 100%);
-        color: #cccccc;
-        font-family: "Comfortaa", sans-serif;
-    }
-
-    /* Paint the gradient as a fixed layer behind everything */
-    :global(body)::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        z-index: -1;
-        pointer-events: none;
-        background: radial-gradient(circle 100vw at center, #323232 0%, #211b1b 100%);
-    }
-
-</style>
-
-
-<nav style="justify-self: center;">
+<div id="container">
     <div id="navbar">
         <a class="nav-item" class:active={page.url.pathname === base + '/'} href='{base}/'><p>Home</p></a>
         <a class="nav-item" class:active={page.url.pathname === base + '/projects'} href='{base}/projects'><p>Projects</p></a>
         <a class="nav-item" class:active={page.url.pathname === base + '/contact'} href='{base}/contact'><p>Contact</p></a>
         <a class="nav-item school-btn" class:active={page.url.pathname.includes("/school")} href='{base}/school'><p>School</p></a>
     </div>
-</nav>
+</div>
+
+<style>
+
+    #container {
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        z-index: 0;
+    }
+
+     #navbar {
+         margin-top: 2vh;
+         width: 50vw;
+         height: fit-content;
+         display: inline-flex;
+         gap: 1rem;
+         justify-content: space-evenly;
+     }
+
+    .nav-item {
+        font-size: 1.4vw;
+        width: 25%;
+        background: var(--btn-secondary-bg);
+        box-shadow: var(--shadow-card);
+        color: var(--btn-secondary-text);
+        border-radius: var(--btn-border-radius);
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+     .active {
+         background-color: var(--btn-secondary-bg-hover);
+     }
+
+     .nav-item:hover {
+         transition: ease-in 0.2s;
+         background-color: var(--btn-secondary-bg-hover);
+     }
+
+</style>
+
+
+
