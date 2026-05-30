@@ -89,6 +89,8 @@
         img {
             width: 100%;
             border-radius: 1vw;
+            border: 2px solid var(--color-border-subtle);
+            box-shadow: var(--shadow-card);
         }
     }
 
@@ -127,12 +129,14 @@
             align-items: center;
             justify-content: center;
             background: var(--btn-secondary-bg);
+            border: 1px solid var(--color-border);
             width: 25%;
             text-decoration: none;
             color: var(--btn-secondary-text);
             font-family: inherit;
             font-size: 0.8vw;
             font-weight: lighter;
+            box-shadow: var(--shadow-card);
 
             span {
                 padding: 0.5rem;

@@ -72,6 +72,7 @@ body {
     display: grid;
     grid-template-areas: "nav nav" "header zheader" "content content" "footer footer";
     grid-template-rows: auto 1fr auto;
+
 }
 
 

@@ -1,202 +1,290 @@
-<script>
+<script lang="ts">
     import Navbar from "$lib/Navbar.svelte";
+    import Copyright from "$lib/Copyright.svelte";
+
+    let isHidden: boolean = false;
+
+    function submitForm() : void {
+        let form: HTMLFormElement | null = document.getElementById("form");
+        if (form == null) return;
+        const formData = new FormData(form);
+        let subject = formData.get("subject");
+        let body = formData.get("body");
+
+        let url = "mailto:caleb@anonymouslyfast.com?subject=" + subject + "&body=" + body;
+        open(url, "_blank");
+        alert("Success! Mailto link:" + url);
+    }
 </script>
 
+<Navbar />
 
-<div id="container">
-    <Navbar />
+<div class="container">
+    <div class="card">
 
-    <div id="main-container">
-        <div id="main-content">
-            <div id="contact-container">
-                <h3>Want to contact me?</h3>
-                <p>If so use one of these communication services to reach me!</p>
+        <div class="contact-form-container">
+            <div class="contact-form-content">
+                <h2>Procure an Email</h2>
+                <h4>Create an email to send!</h4>
 
-                <div id="contact-list">
-                    <div class="contact-item">
-                        <img src="email-icon.svg" alt="email-icon" />
-                        <a href="mailto:public@anonymouslyfast.com">public@anonymouslyfast.com</a>
-                    </div>
+                <div class="form-container">
+                    <form id="form" on:submit={submitForm}>
+                        <label>
+                            Subject
+                            <input  name="subject" type="text" placeholder="Question About Your Website" required />
+                        </label>
 
-                    <div class="contact-item">
-                        <img src="Discord-Symbol-White.svg" alt="email-icon" />
-                        <p>anonymouslyfast</p>
-                    </div>
+                        <label>
+                            Body
+                            <textarea id="body" name="body" placeholder="Hey Caleb, how did you make this awesome site?"  required></textarea>
+                        </label>
+
+                        <button type="submit">Send Email</button>
+                    </form>
                 </div>
-            </div>
 
-            <div id="resume-container">
-                <h3>Want to hire me?</h3>
-                <p>If so use one of my contacts to reach me, and below is my redacted resume!</p>
-                
-                <div id="resume">
-                    <a href="resume.png"><img src="webp/resume.webp" alt="Caleb Shearer's resume"></a>
-                </div>
             </div>
         </div>
+
+        <div class:slide-out={isHidden} class="contact-information">
+            <div class="title">
+                <h2>Let's Connect</h2>
+                <h4>Want to chat? I'd love to hear from you!</h4>
+            </div>
+
+            <div class="info">
+                <div class="info-item">
+                    <span>
+                        <img src="Discord-Symbol-White.svg" alt="Discord Logo (White)"/>
+                        <p>anonymouslyfast</p>
+                    </span>
+                </div>
+                <div class="info-item">
+                    <span>
+                        <img src="email-icon.svg" alt="Email Logo (Email)"/>
+                        <p>caleb@anonymouslyfast.com</p>
+                    </span>
+                </div>
+            </div>
+
+            <button class="info-button" type="button" on:click={() => isHidden = !isHidden}>
+                Procure an email
+            </button>
+        </div>
     </div>
-
-
 </div>
 
-<div id="copyright">
-    © 2025 Caleb Shearer. All rights reserved.
-</div>
+<Copyright />
 
 <style>
-
-    #copyright{
-        width: 100%;
-        text-align: center;
-        margin-top: 2rem;
-        position: relative;
-        bottom: 0;
-        font-size: 0.7rem;
-    }
-
-
-    @media (max-width: 800px) {
-        #contact-container {
-            width: 80% !important;
-        }
-
-        #resume-container {
-            width: 80% !important;
-        }
-
-        .contact-item {
-            width: 85% !important;
-        }
-
-
-        #resume {
-            width: 80% !important;
-        }
-
-    }
-
-    #container {
-        width: 100%;
+    .container {
+        width: 100vw;
+        height: 80vh;
         display: flex;
-        flex-direction: column;
+        grid-area: content;
+        justify-content: center;
         align-items: center;
     }
 
-    #main-container {
-        margin-top: 4rem;
+    .card {
+        position: relative;        /* ← changed */
+        width: 60vw;
+        height: 60vh;
+        background-color: var(--color-bg-subtle);
+        border-radius: 1vw;
+        box-shadow: var(--shadow-card);
+        overflow: hidden;          /* ← added */
+    }
+
+    /* Panel B — always fills the card, sits behind */
+    .contact-form-container {
+        position: absolute;        /* ← changed */
+        top: 0; right: 0; bottom: 0; left: 0;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 40% auto;
+    }
+
+    .contact-form-content {
+        grid-column: 2;
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: xxx-large;
+            padding-bottom: 0;
+            margin-bottom: 1rem;
+        }
+        h4 {
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+            color: var(--color-text-muted);
+            font-weight: lighter;
+        }
+
+
     }
 
-    #main-content {
-        width: inherit;
-        height: inherit;
+    .form-container {
+        width: 100%;
+        height: 80%;
         display: flex;
-        flex-direction: row;
-        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        form {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0.5vw;
+            border: 1px solid var(--color-border);
+            padding: 1rem;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            label {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                font-family: inherit;
+
+                gap: 0.5rem;
+
+
+                input {
+                    height: 2rem;
+                    text-box: text;
+                    background-color: var(--color-bg-subtle);
+                    border: 1px solid var(--color-border);
+                    color: var(--color-text-primary);
+                    font-size: medium;
+                }
+
+                textarea {
+                    height: 5rem;
+                    width: 100%;
+                    resize: none;
+                    background-color: var(--color-bg-subtle);
+                    border: 1px solid var(--color-border);
+                    color: var(--color-text-primary);
+                    font-size: medium;
+                }
+
+            }
+
+            button {
+                background-color: var(--btn-primary-bg);
+                padding: 0.5rem;
+                border: none;
+                border-radius: 0.5vw;
+                color: var(--btn-primary-text);
+            }
+
+            button:hover {
+                background-color: var(--btn-primary-bg-hover);
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    /* Panel A — sits on top, slides left on toggle */
+    .contact-information {
+        position: relative;        /* ← added */
+        z-index: 2;                /* ← added */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1vw;
+        overflow: hidden;
+        flex-shrink: 0;
+        background-color: var(--color-bg-card);  /* ← add so it truly covers */
+        border-right: 1px solid var(--color-border);
+
+        transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+        .title {
+            text-align: center;
+            h2 {
+                font-size: xxx-large;
+                padding-bottom: 0;
+                margin-bottom: 1rem;
+            }
+            h4 {
+                margin: 0;
+                padding: 0;
+                font-size: 1rem;
+                color: var(--color-text-muted);
+                font-weight: lighter;
+            }
+        }
+    }
+
+    .contact-information.slide-out {
+        width: 40%;
+    }
+
+    .info {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    #contact-container {
-        width: 40%;
-        height: 40%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        background: #323232;
-        border-radius: 5vw;
-        box-shadow:
-                rgba(0, 0, 0, 0.25) 0 54px 55px,
-                rgba(0, 0, 0, 0.12) 0 -12px 30px,
-                rgba(0, 0, 0, 0.12) 0 4px 6px,
-                rgba(0, 0, 0, 0.17) 0 12px 13px,
-                rgba(0, 0, 0, 0.09) 0 -3px 5px;
-    }
-
-    #contact-list {
-        width: 100%;
-        height: auto;
-        justify-items: center;
-        margin-bottom: 2rem;
-        display: flex;
-        flex-direction: column;
         align-items: center;
+        gap: 1.5rem;
+
+        .info-item {
+            width: 20vw;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            border: 1px solid var(--color-border);
+            border-radius: 0.5vw;
+            padding: 0.5rem;
+
+            span {
+                flex: 1;
+                display: inline-flex;
+                align-items: center;
+                font-size: 0.9cqw;
+
+                img {
+                    width: 2rem;
+                    padding: 1rem;
+                    border-right: 1px solid var(--color-border);
+                }
+
+                p {
+                    width: 100%;
+                    justify-self: center;
+                    text-align: center;
+                }
+            }
+        }
     }
 
-    .contact-item {
+    .info-button {
         display: flex;
-        width: 50%;
-        height: 20%;
+        align-self: center;
+        border-radius: 0.5vw;
+        width: 15vw;
         padding: 1rem;
-        margin-top: 1rem;
-        border-radius: 5vw;
-        align-items: center;
-        box-shadow:
-                rgba(29, 33, 40, 0.4) 0 0 0 2px,
-                rgba(29, 33, 40, 0.65) 0 4px 6px -1px,
-                rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        justify-content: center;
+        background-color: var(--btn-secondary-bg);
+        border: 1px solid var(--btn-secondary-border);
+        color: var(--btn-secondary-text);
+        box-shadow: var(--shadow-card);
     }
 
-    .contact-item img {
-        width: 10%;
-        justify-self: flex-start !important;
+    .info-button:hover {
+        background-color: var(--btn-secondary-hover-bg);
+        cursor: pointer;
     }
-
-    .contact-item a, p {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        text-decoration: none;
-        color: inherit;
-        justify-self: flex-end;
-    }
-
-    #resume-container {
-        width: 50%;
-        text-align: center;
-        background: #323232;
-        border-radius: 5vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow:
-                rgba(0, 0, 0, 0.25) 0 54px 55px,
-                rgba(0, 0, 0, 0.12) 0 -12px 30px,
-                rgba(0, 0, 0, 0.12) 0 4px 6px,
-                rgba(0, 0, 0, 0.17) 0 12px 13px,
-                rgba(0, 0, 0, 0.09) 0 -3px 5px;
-    }
-
-
-    #resume {
-        margin-top: 2rem;
-        border-radius: 3rem;
-        padding: 2%;
-        width: 70%;
-        margin-bottom: 2rem;
-        box-shadow:
-                rgba(29, 33, 40, 0.4) 0 0 0 2px,
-                rgba(29, 33, 40, 0.65) 0 4px 6px -1px,
-                rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    }
-
-    #resume img {
-        width: 90%;
-        border-radius: 2rem;
-        box-shadow:
-                rgba(29, 33, 40, 0.4) 0 0 0 2px,
-                rgba(29, 33, 40, 0.65) 0 4px 6px -1px,
-                rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    }
-
-    #resume img:hover {
-        transition: 0.3s;
-        width: 95%;
-    }
-
-
-
 </style>
