@@ -7,7 +7,6 @@
     <div id="navbar">
         <a class="nav-item" class:active={page.url.pathname === base + '/'} href='{base}/'><p>Home</p></a>
         <a class="nav-item" class:active={page.url.pathname === base + '/projects'} href='{base}/projects'><p>Projects</p></a>
-        <a class="nav-item school-btn" class:active={page.url.pathname.includes("/education")} href='{base}/education'><p>Education</p></a>
         <a class="nav-item" class:active={page.url.pathname === base + '/contact'} href='{base}/contact'><p>Contact</p></a>
     </div>
 </div>
