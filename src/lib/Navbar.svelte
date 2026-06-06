@@ -6,7 +6,7 @@
 <div id="container">
     <div id="navbar">
         <a class="nav-item" class:active={page.url.pathname === base + '/'} href='{base}/'><p>Home</p></a>
-        <a class="nav-item" class:active={page.url.pathname === base + '/projects'} href='{base}/projects'><p>Projects</p></a>
+        <a class="nav-item" class:active={page.url.pathname === base + '/showcase'} href='{base}/showcase'><p>Showcase</p></a>
         <a class="nav-item" class:active={page.url.pathname === base + '/contact'} href='{base}/contact'><p>Contact</p></a>
     </div>
 </div>

@@ -19,7 +19,7 @@
 
 <Navbar />
 
-<div class="container">
+<div class="card-container">
     <div class="card">
 
         <div class="contact-form-container">
@@ -77,7 +77,7 @@
 <Copyright />
 
 <style>
-    .container {
+    .card-container {
         width: 100vw;
         height: 80vh;
         display: flex;

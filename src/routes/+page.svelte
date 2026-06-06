@@ -5,7 +5,7 @@
 
 <div>
     <Navbar/>
-    <div class="container">
+    <div class="card-container">
         <div class="card">
             <div class="card-content">
                 <div class="card-photo">
@@ -50,7 +50,7 @@
 
 <style>
     /* ====== Card Set Up ====== */
-    .container {
+    .card-container {
         width: 100vw;
         height: 80vh;
         display: flex;

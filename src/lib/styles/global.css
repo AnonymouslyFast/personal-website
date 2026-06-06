@@ -75,5 +75,37 @@ body {
 
 }
 
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-group(card) {
+    animation: ease 1s;
+}
+
+card {
+    view-transition-name: card-container;
+}
+
+::view-transition-new(card) {
+    animation-name: slide-in;
+}
+
+::view-transition-old(card) {
+    animation-name: slide-out;
+}
+
+@keyframes slide-out {
+    to {
+        translate: -100vw;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        translate: 100vw;
+    }
+}
+
 
 

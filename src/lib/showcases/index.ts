@@ -1,0 +1,19 @@
+import Navbar from "$lib/Navbar.svelte";
+import LunarDiscordShowCase from "$lib/showcases/LunarDiscordShowCase.svelte";
+import PersonalWebsiteShowcase from "$lib/showcases/PersonalWebsiteShowcase.svelte";
+
+export const showcases = [
+    {
+        name: "Personal Website",
+        description: "The website you're viewing right now! Went through two redesigns until I fell upon this design!" +
+            " Website is hosted on my bare metal server, and the code is all on my github.",
+        categories: "web",
+        component: PersonalWebsiteShowcase,
+    },
+    {
+        name: "LunarDiscord",
+        description: "Minecraft plugin for paper 1.21+ servers. Introduces Discord to Minecraft account linkage, and rewards.",
+        categories: "Minecraft",
+        component: LunarDiscordShowCase
+    }
+];
