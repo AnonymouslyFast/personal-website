@@ -173,6 +173,8 @@
         .card {
             width: 90%;
             height: 85%;
+            justify-content: center;
+            align-items: center;
         }
 
         .card-content {
