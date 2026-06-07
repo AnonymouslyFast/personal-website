@@ -17,9 +17,11 @@
 
    @media (max-width: 900px) {
        footer {
+           display: flex;
+           width: 100%;
            margin-top: 1rem;
-           justify-self: center;
-           align-self: center;
+           justify-content: center;
+           align-content: center;
            font-size: small;
            padding: 1rem;
            grid-area: footer;
