@@ -154,7 +154,7 @@
             flex-direction: row;
             flex-wrap: nowrap;
 
-            gap: 2rem;
+            gap: 3rem;
             overflow-x: auto;
             overflow-y: hidden;
 
@@ -165,7 +165,7 @@
             border: 2px solid var(--color-border);
 
             scrollbar-width: thin;
-            scrollbar-color: var(--color-border) var(--color-bg-page);
+            scrollbar-color: var(--color-border-subtle) var(--color-bg-page);
 
 
         }
@@ -184,9 +184,10 @@
         margin: 1rem;
         width: 100%;
         height: 95%;
-        overflow: auto;
-        overflow-y: hidden;
-        scrollbar-width: auto;
+        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: auto;
+        scrollbar-width: thin;
         scrollbar-color: var(--color-border) var(--color-bg-page);
     }
 

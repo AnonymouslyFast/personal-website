@@ -17,12 +17,13 @@
 
 <style>
     .container {
-        width: 25%;
+        width: 30%;
         height: 90%;
         background-color: var(--color-bg-card);
         border: 1px solid var(--color-border);
         border-radius: 1vw;
         box-shadow: var(--shadow-card);
+        flex-shrink: 0;
 
         display: flex;
         flex-direction: column;
@@ -46,7 +47,7 @@
         p {
             overflow-y: auto;
             overflow-x: hidden;
-            padding: 0.5rem;
+            padding: 0.5rem 0.5rem 1rem 1rem;
             overflow-wrap: break-word;
         }
     }
@@ -63,14 +64,14 @@
         button {
             width: 50%;
             height: 70%;
-            background-color: var(--btn-primary-bg);
+            background-color: var(--btn-ghost-bg);
             border-radius: 0.5vw;
-            color: var(--btn-primary-text);
-            border: none;
+            border: 1px solid var(--btn-ghost-border);
+            color: var(--btn-ghost-text);
         }
 
         button:hover {
-            background-color: var(--btn-primary-bg-hover);
+            background-color: var(--btn-ghost-bg-hover);
             width: 45%;
             transition: ease-in-out 0.2s;
             cursor: pointer;

@@ -24,7 +24,7 @@
         </h4>
         <p>
             I am currently hosting this on my Ubuntu bare-metal home server. I originally built this in summer of 2025,
-            but refactored and changed up design in the summer of 2026. All code for this is plubic, and avalible on my
+            but refactored and changed up design in the summer of 2026. All code for this is public, and available on my
             github <a href="https://github.com/AnonymouslyFast/personal-website/" target="_blank">https://github.com/AnonymouslyFast/personal-website/</a>.
 
         </p>

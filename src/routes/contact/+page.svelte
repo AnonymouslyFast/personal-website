@@ -177,15 +177,15 @@
             }
 
             button {
-                background-color: var(--btn-primary-bg);
-                padding: 0.5rem;
-                border: none;
+                background-color: var(--btn-ghost-bg);
+                border: 1px solid var(--btn-ghost-border);
                 border-radius: 0.5vw;
-                color: var(--btn-primary-text);
+                color: var(--btn-ghost-text);
+                padding: 1rem;
             }
 
             button:hover {
-                background-color: var(--btn-primary-bg-hover);
+                background-color: var(--btn-ghost-bg-hover);
                 cursor: pointer;
             }
 
