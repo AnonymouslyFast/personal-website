@@ -107,5 +107,12 @@ card {
     }
 }
 
+@media (max-width: 900px) {
+    body {
+        display: grid;
+        grid-template-areas: "nav nav" "header zheader" "content content" "footer footer";
+    }
+}
+
 
 

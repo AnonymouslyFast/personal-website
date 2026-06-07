@@ -287,4 +287,229 @@
         background-color: var(--btn-secondary-hover-bg);
         cursor: pointer;
     }
+    /* ====== Mobile Support ====== */
+
+    @media (max-width: 900px) {
+
+
+        .card {
+            width: 90%;
+            height: 85%;
+        }
+
+        /* Panel A — sits on top, slides left on toggle */
+        .contact-information {
+            position: relative;        /* ← added */
+            z-index: 2;                /* ← added */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 1vw;
+            overflow: hidden;
+            flex-shrink: 0;
+            background-color: var(--color-bg-card);  /* ← add so it truly covers */
+            border-right: 1px solid var(--color-border);
+
+            transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            align-content: center;
+            justify-content: center;
+
+            .title {
+                margin-top: -2rem;
+                text-align: center;
+                h2 {
+                    font-size: xx-large;
+                    padding-bottom: 0;
+                    margin-bottom: 1rem;
+                }
+                h4 {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 1rem;
+                    color: var(--color-text-muted);
+                    font-weight: lighter;
+                }
+            }
+        }
+
+        .contact-information.slide-out {
+            height: 30%;
+            width: initial;
+            .info-button {
+                margin-top: 2rem;
+                position: sticky;
+                top: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+        }
+
+        .info {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+
+            .info-item {
+                width: 90%;
+                height: fit-content;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                border: 1px solid var(--color-border);
+                border-radius: 0.5vw;
+                padding: 0.5rem;
+
+                span {
+                    flex: 1;
+                    display: inline-flex;
+                    align-items: center;
+                    font-size: 1rem;
+
+                    img {
+                        width: 2rem;
+                        padding: 1rem;
+                        border-right: 1px solid var(--color-border);
+                    }
+
+                    p {
+                        width: 100%;
+                        justify-self: center;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .info-button {
+            display: flex;
+            align-self: center;
+            border-radius: 0.5vw;
+            width: 80%;
+            padding: 1rem;
+            justify-content: center;
+            background-color: var(--btn-secondary-bg);
+            border: 1px solid var(--btn-secondary-border);
+            color: var(--btn-secondary-text);
+            box-shadow: var(--shadow-card);
+        }
+
+        .info-button:hover {
+            background-color: var(--btn-secondary-hover-bg);
+            cursor: pointer;
+        }
+
+        /* Panel B — always fills the card, sits behind */
+        .contact-form-container {
+            position: absolute;        /* ← changed */
+            top: 0; right: 0; bottom: 0; left: 0;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-gap: 0;
+            grid-template-rows: 30% auto;
+            grid-template-columns: none !important;
+        }
+
+        .contact-form-content {
+            grid-column: unset;
+            grid-row: 2;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                font-size: xx-large;
+                padding: 0;
+                margin-top: 0.5rem;
+                margin-bottom: 0;
+            }
+            h4 {
+                margin: 0 0 0.5rem;
+                padding: 0;
+                font-size: 1rem;
+                color: var(--color-text-muted);
+                font-weight: lighter;
+            }
+
+
+        }
+
+
+
+        .form-container {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            form {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                border-radius: 0.5vw;
+                border: 1px solid var(--color-border);
+                padding: 1rem;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    font-family: inherit;
+
+                    gap: 0.5rem;
+
+
+                    input {
+                        height: 2rem;
+                        text-box: text;
+                        background-color: var(--color-bg-subtle);
+                        border: 1px solid var(--color-border);
+                        color: var(--color-text-primary);
+                        font-size: medium;
+                    }
+
+                    textarea {
+                        height: 5rem;
+                        width: 100%;
+                        resize: none;
+                        background-color: var(--color-bg-subtle);
+                        border: 1px solid var(--color-border);
+                        color: var(--color-text-primary);
+                        font-size: medium;
+                    }
+
+                }
+
+                button {
+                    background-color: var(--btn-ghost-bg);
+                    border: 1px solid var(--btn-ghost-border);
+                    border-radius: 0.5vw;
+                    color: var(--btn-ghost-text);
+                    padding: 1rem;
+                }
+
+                button:hover {
+                    background-color: var(--btn-ghost-bg-hover);
+                    cursor: pointer;
+                }
+
+            }
+        }
+
+    }
+
+    /* ====== Mobile Support ====== */
+
 </style>

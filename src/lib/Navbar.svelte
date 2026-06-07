@@ -57,6 +57,18 @@
          background-color: var(--btn-secondary-bg-hover);
      }
 
+
+    @media (max-width: 900px) {
+        #navbar {
+            width: 90%;
+        }
+
+        .nav-item {
+            width: 25%;
+            font-size: medium;
+        }
+    }
+
 </style>
 
 

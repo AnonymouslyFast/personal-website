@@ -17,7 +17,7 @@
 
 <style>
     .container {
-        width: 30%;
+        width: 80%;
         height: 90%;
         background-color: var(--color-bg-card);
         border: 1px solid var(--color-border);

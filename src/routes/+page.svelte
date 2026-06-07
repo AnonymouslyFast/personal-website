@@ -43,10 +43,9 @@
             </div>
         </div>
     </div>
+    <Copyright />
 </div>
 
-
-<Copyright />
 
 <style>
     /* ====== Card Set Up ====== */
@@ -168,7 +167,120 @@
 
     /* ====== Card Content ====== */
 
+    /* ====== Mobile Support ====== */
 
+    @media (max-width: 900px) {
+        .card {
+            width: 90%;
+            height: 85%;
+        }
 
+        .card-content {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: unset;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            justify-self: center;
+
+        }
+        /* ====== Card Set Up ====== */
+
+        /* ====== Card Content ====== */
+        .card-photo {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 50%;
+                border-radius: 5vw;
+                border: 2px solid var(--color-border-subtle);
+                box-shadow: var(--shadow-card);
+            }
+        }
+
+        .card-text {
+            width: 100%;
+            height: 50%;
+
+            h1{
+                text-align: center;
+                border-bottom: 1px solid var(--color-text-secondary);
+                padding-bottom: 0.5rem;
+                width: 100%;
+                font-size: large;
+                font-weight: bold;
+            }
+
+            p {
+                margin-top: 1rem;
+                text-align: center;
+                font-size: medium;
+                font-weight: normal;
+            }
+        }
+
+        .connections-container {
+            margin-top: 2rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 1rem;
+
+            .connections-item {
+                border-radius: 1vw;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                background: var(--btn-secondary-bg);
+                border: 1px solid var(--color-border);
+                width: 25%;
+                text-decoration: none;
+                color: var(--btn-secondary-text);
+                font-family: inherit;
+                font-size: 0.8vw;
+                font-weight: lighter;
+                box-shadow: var(--shadow-card);
+
+                span {
+                    padding: 1rem;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10%;
+                    font-size: small    ;
+
+                    img {
+                        width: 40%;
+                    }
+
+                }
+            }
+
+            .connections-item:hover {
+                background-color: var(--btn-secondary-bg-hover);
+                transition: ease-in-out 0.3s;
+
+            }
+
+            .connections-item:active {
+                box-shadow: 0 0.3rem 1rem rgb(154 154 154);
+                transition: ease-in-out 0.3s;
+            }
+        }
+
+    }
+
+    /* ====== Mobile Support ====== */
 
 </style>

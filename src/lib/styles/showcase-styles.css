@@ -66,3 +66,16 @@
         }
     }
 }
+
+@media (max-width: 900px) {
+
+    .back-card-content-container .content {
+        h4 {
+            width: 80%;
+        }
+
+        p {
+            width: 80%;
+        }
+    }
+}

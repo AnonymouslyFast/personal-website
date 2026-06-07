@@ -14,4 +14,15 @@
        padding: 1rem;
        grid-area: footer;
    }
+
+   @media (max-width: 900px) {
+       footer {
+           margin-top: 1rem;
+           justify-self: center;
+           align-self: center;
+           font-size: small;
+           padding: 1rem;
+           grid-area: footer;
+       }
+   }
 </style>
