@@ -173,6 +173,8 @@
         .card {
             width: 90%;
             height: 85%;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
