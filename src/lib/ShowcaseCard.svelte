@@ -17,7 +17,7 @@
 
 <style>
     .container {
-        width: 80%;
+        width: 30%;
         height: 90%;
         background-color: var(--color-bg-card);
         border: 1px solid var(--color-border);
@@ -47,7 +47,7 @@
         p {
             overflow-y: auto;
             overflow-x: hidden;
-            padding: 0.5rem 0.5rem 1rem 1rem;
+            padding: 0.5rem 0 1rem 1rem;
             overflow-wrap: break-word;
         }
     }
@@ -79,6 +79,13 @@
 
         button:active {
             height: 60%;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .container {
+            width: 80%;
+            height: 90%;
         }
     }
 </style>

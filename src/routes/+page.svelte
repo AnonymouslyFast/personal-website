@@ -233,6 +233,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-evenly;
+            align-content: center;
             gap: 1rem;
 
             .connections-item {
